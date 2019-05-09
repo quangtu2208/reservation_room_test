@@ -1,0 +1,5 @@
+class User < ApplicationRecord
+  has_many :reservations, dependent: :destroy
+  has_many :reviews, dependent: :destroy
+  has_many :locations, dependent: :destroy
+end
