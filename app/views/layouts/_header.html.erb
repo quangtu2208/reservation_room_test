@@ -1,0 +1,36 @@
+<header id="header">
+  <div class="header-top">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-12 col-sm-12 col-12 header-top-right">
+          <div class="header-social">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-dribbble"></i></a>
+            <a href="#"><i class="fa fa-behance"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container main-menu">
+    <div class="row align-items-center justify-content-between d-flex">
+        <div id="logo">
+          <a href="index.html"><%= image_tag "admin/logo.png", alt: "logo" %></a>
+        </div>
+        <nav id="nav-menu-container">
+          <ul class="nav-menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Accommodations</a></li>
+            <li class="menu-has-children"><a href="">Account</a>
+              <ul>
+                <li><%= link_to "Profile", "#" %></li>
+                <li><%= link_to "Change Password", "#" %></li>
+                <li><%= link_to "Sign Out", logout_path, method: :delete %></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+    </div>
+  </div>
+</header>

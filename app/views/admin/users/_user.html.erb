@@ -1,0 +1,8 @@
+<tr>
+  <td><%= link_to user.name, admin_user_path(user) %></td>
+  <td><%= user.email %></td>
+  <td><%= user.role_badge %></td>
+  <td><%= user.status_badge %></td>
+  <td><%= user.created_at.strftime("%H:%M-%d/%m/%Y") %></td>
+  <td><%= user.updated_at.strftime("%H:%M-%d/%m/%Y") %></td>
+</tr>

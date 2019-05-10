@@ -48,3 +48,18 @@ build-iPhoneSimulator/
 
 # unless supporting rvm < 1.11.0 or doing something fancy, ignore this:
 .rvmrc
+
+# Ignore master key for decrypting credentials and more.
+/config/master.key
+
+config/settings.local.yml
+config/settings/*.local.yml
+config/environments/*.local.yml
+config/credentials.yml.enc
+config/database.yml
+config/storage.yml
+
+test/*
+
+# Ignore application configuration
+/config/application.yml

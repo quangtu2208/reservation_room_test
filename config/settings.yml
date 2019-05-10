@@ -1,0 +1,15 @@
+validates:
+  user:
+    maximum_name: 50
+    maximum_email: 255
+    minimum_pass: 6
+
+datetime_format: "%H:%M-%d/%m/%Y"
+
+search_fields:
+  user: ["name", "email", "created_at", "updated_at"]
+
+controllers:
+  admin:
+    users:
+      pag: 10

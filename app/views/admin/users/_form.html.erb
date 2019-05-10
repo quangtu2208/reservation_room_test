@@ -1,0 +1,22 @@
+<%= form_for [:admin, @user] do |f| %>
+  <%= render "shared/error_messages", object: f.object %>
+
+  <div class="form-group">
+    <%= f.label :name, t(".form_name") %>
+    <%= f.text_field :name, class: "form-control", placeholder: "Enter name" %>
+  </div>
+  <div class="form-group">
+    <%= f.label :email, t(".form_email") %>
+    <%= f.email_field :email, class: "form-control", placeholder: "Enter email" %>
+  </div>
+  <div class="form-group">
+    <%= f.label :password, t(".form_pwd") %>
+    <%= f.password_field :password, class: "form-control", placeholder: "Enter password" %>
+  </div>
+  <div class="form-group">
+    <%= f.label :password_confirmation, t(".form_pwd_cof") %>
+    <%= f.password_field :password_confirmation, class: "form-control", placeholder: "Enter password" %>
+  </div>
+    <%= f.button yield(:button_text), class: "btn btn-success mr-2" %>
+    <%= link_to t(".form_cancel"), request.referer, class: "btn btn-light" %>
+<% end %>

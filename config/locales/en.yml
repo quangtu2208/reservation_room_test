@@ -1,0 +1,83 @@
+en:
+  layouts:
+    admin:
+      application:
+        base_title: "Admin room booking"
+      footer:
+        copyright: "Copyright © 2018"
+        link: "Room Booking"
+        slogan: "Hand-crafted & made with"
+      nav:
+        notification: "You have 4 new notifications"
+        view_all: "View all"
+        new_user: "New user registration"
+        new_location: "New location registration"
+      sidebar:
+        accounts: "Accounts"
+        list_account: "List Accounts"
+        new_account: "New Account"
+    application:
+      base_title: "Room booking"
+    header:
+
+  admin:
+    users:
+      new:
+        page_title: "Create account"
+        form_submit: "Create"
+      form:
+        form_name: "Name"
+        form_email: "Email"
+        form_pwd: "Password"
+        form_pwd_cof: "Confirmation"
+        form_cancel: "Cancel"
+      modal:
+        confirm: "Are you sure?"
+        del: "Delete"
+        cancel: "Cancel"
+      edit:
+        page_title: "Update profile"
+        form_submit: "Save"
+      show:
+        create_at: "Create at"
+        update_at: "Update at"
+        email: "E-mail"
+        del_but: "Delete"
+        edit_but: "Edit"
+      index:
+        page_title: "List Accounts"
+        name: "Name"
+        email: "Email"
+        role: "Role"
+        status: "Status"
+        create_at: "Created at"
+        update_at: "Updated at"
+
+  shared:
+    error_messages:
+      the_form_contains: "The form contains"
+    search:
+      search: "Search"
+
+  user_mailer:
+    account_activation:
+      page_title: "Actived"
+      p_1: "Hi"
+      p_2: "Welcome to the RoomBooking! Click on the link below to activate your account:"
+      a_active: "Activate"
+    password_reset:
+      page_title: "Password reset"
+      p_1: "To reset your password click the link below:"
+      a_reset: "Reset password"
+      p_2: "This link will expire in two hours."
+      p_3: "If you did not request your password to be reset, please ignore this email and
+        your password will stay as it is."
+
+  controllers:
+    admin:
+      users:
+        create_success: "Create account success"
+        update_success: "Profile updated"
+        login_check: "Please log in."
+        destroy_success: "User deleted"
+        destroy_fail: "Can't delete"
