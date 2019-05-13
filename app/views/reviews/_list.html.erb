@@ -1,0 +1,21 @@
+<% if @location.reviews.count == 0 %>
+  <div class="text-center"><h4><%= t ".there_is_no_review" %></h4></div>
+<% else %>
+  <% @location.reviews.order("id desc").each do |r| %>
+    <hr>
+    <div class="row">
+      <div class="col-md-11">
+        <div>
+          <strong><%= r.user.name %> <div><%= r.rate %></div> </strong>
+          <span class="pull-right">
+            <%= link_to t(".remove_my_review"), [@location, r], method: :delete, data:
+            {confirm: t(".are_you_sure")} if current_user && current_user == r.user %>
+          </span>
+        </div>
+        <div><%= l r.created_at, format: :full %></div>
+        <div><%= r.comment %></div>
+      </div>
+    </div>
+  <% end %>
+<% end %>
+

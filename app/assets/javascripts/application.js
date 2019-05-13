@@ -11,8 +11,8 @@
 // about supported directives.
 //
 //= require jquery
-//= require popper
 //= require bootstrap
+//= require popper
 //= require jquery-ui
 //= require easing.min
 //= require hoverIntent
@@ -30,3 +30,4 @@
 //= require activestorage
 //= require turbolinks
 //= require cable
+//= require jquery.raty

@@ -198,6 +198,9 @@ en:
         login_check: "Please log in."
         destroy_success: "User deleted"
         destroy_fail: "Can't delete"
+    reviews:
+      destroy_success: "Review deleted"
+      destroy_fail: "Can't delete"
 
   manager:
     rooms:
@@ -335,3 +338,18 @@ en:
         enter_description: "Enter description"
         enter_status: "Enter status"
 
+  locations:
+    show:
+      reviews: "Reviews"
+
+  reviews:
+    form:
+      create: "Create"
+    list:
+      there_is_no_review: "There is no Review yet"
+      remove_my_review: "Remove My Review"
+      are_you_sure: "Are you sure?"
+
+  users:
+    show:
+      reviews: "Reviews"
