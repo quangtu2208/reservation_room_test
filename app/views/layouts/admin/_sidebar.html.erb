@@ -1,0 +1,52 @@
+<nav class="sidebar sidebar-offcanvas" id="sidebar">
+  <ul class="nav">
+    <li class="nav-item nav-profile">
+      <div class="nav-link">
+        <div class="user-wrapper">
+          <div class="profile-image">
+            <%= image_tag "admin/faces/face8.jpg", alt: "profile image" %> </div>
+          <div class="text-wrapper">
+            <p class="profile-name"><%#= current admin %></p>
+            <div>
+              <small class="designation text-muted"><%#= current user role %></small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="collapse" href="#accounts" aria-expanded="true" aria-controls="accounts">
+        <i class="menu-icon mdi mdi-account-multiple"></i>
+        <span class="menu-title"><%= t ".accounts" %></span>
+        <i class="menu-arrow"></i>
+      </a>
+      <div class="collapse" id="accounts">
+        <ul class="nav flex-column sub-menu">
+          <li class="nav-item">
+            <%= link_to t(".list_account"), admin_users_path, class: "nav-link" %>
+          </li>
+          <li class="nav-item">
+            <%= link_to t(".new_account"), new_admin_user_path, class: "nav-link" %>
+          </li>
+        </ul>
+      </div>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="collapse" href="#page-layouts" aria-expanded="false" aria-controls="page-layouts">
+        <i class="menu-icon mdi mdi-account-multiple"></i>
+        <span class="menu-title"><%= t ".accounts" %></span>
+        <i class="menu-arrow"></i>
+      </a>
+      <div class="collapse" id="page-layouts">
+        <ul class="nav flex-column sub-menu">
+          <li class="nav-item">
+            <%= link_to t(".list_account"), admin_users_path, class: "nav-link" %>
+          </li>
+          <li class="nav-item">
+            <%= link_to t(".new_account"), new_admin_user_path, class: "nav-link" %>
+          </li>
+        </ul>
+      </div>
+    </li>
+  </ul>
+</nav>

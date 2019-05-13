@@ -1,0 +1,7 @@
+<%= form_tag path, method: :get do |f| %>
+  <div class="form-group d-flex">
+    <%= search_field_tag :content, nil, class: "form-control form-control-lg mr-3", placeholder: t(".search") %>
+    <%= select_tag "field", options_for_select(fields << "all", "all"), class: "form-control form-control-lg" %>
+    <%= button_tag t(".search"), class: "btn btn-primary ml-3" %>
+  </div>
+<% end %>

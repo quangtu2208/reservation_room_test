@@ -22,7 +22,7 @@ gem "i18n-js"
 gem "jquery-rails"
 gem "bootstrap", "~> 4.3.1"
 gem "kaminari"
-gem "bootstrap4-kaminari-views"
+gem "figaro"
 
 group :development, :test do
   gem "byebug", platforms: [:mri, :mingw, :x64_mingw]
