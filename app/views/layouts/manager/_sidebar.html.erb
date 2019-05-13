@@ -6,9 +6,9 @@
           <div class="profile-image">
             <%= image_tag "admin/faces/face8.jpg", alt: "profile image" %> </div>
           <div class="text-wrapper">
-            <p class="profile-name">Richard V.Welsh</p>
+            <p class="profile-name"></p>
             <div>
-              <small class="designation text-muted">Manager</small>
+              <small class="designation text-muted"></small>
               <span class="status-indicator online"></span>
             </div>
           </div>
@@ -16,18 +16,18 @@
       </div>
     </li>
     <li class="nav-item">
-      <a class="nav-link" data-toggle="collapse" href="#page-layouts" aria-expanded="false" aria-controls="page-layouts">
-        <i class="menu-icon mdi mdi-notification-clear-all"></i>
-        <span class="menu-title">Page Layouts</span>
+      <a class="nav-link" data-toggle="collapse" href="#rooms" aria-expanded="false" aria-controls="rooms">
+        <i class="menu-icon mdi mdi-home-map-marker"></i>
+        <span class="menu-title"><%= t ".rooms" %></span>
         <i class="menu-arrow"></i>
       </a>
-      <div class="collapse" id="page-layouts">
+      <div class="collapse" id="rooms">
         <ul class="nav flex-column sub-menu">
           <li class="nav-item">
-            <a class="nav-link" href="../../pages/layout/boxed-layout.html">Boxed</a>
+            <%= link_to t(".list_room"), manager_rooms_path, class: "nav-link"  %>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="../../pages/layout/rtl-layout.html">RTL</a>
+            <%= link_to t(".create_room"), new_manager_room_path, class: "nav-link"  %>
           </li>
         </ul>
       </div>

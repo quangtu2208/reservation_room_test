@@ -20,6 +20,14 @@ en:
       base_title: "Room booking"
     header:
 
+    manager:
+      application:
+        base_title: "Manger room booking"
+      sidebar:
+        rooms: "Rooms"
+        list_room: "List rooms"
+        create_room: "Create rooms"
+
   admin:
     users:
       new:
@@ -81,3 +89,76 @@ en:
         login_check: "Please log in."
         destroy_success: "User deleted"
         destroy_fail: "Can't delete"
+
+  manager:
+    rooms:
+      index:
+        rooms: "Rooms"
+        list_room: "Room list"
+        number: "No"
+        room_name: "Room name"
+        occupancy_limit: "Occupancy limit"
+        living_room: "Living room"
+        bed_room: "Bed room"
+        bath_room: "Bath room"
+        number_of_bed: "Number of bed"
+        quantity: "Quantity"
+        price: "Price"
+        location: "Location ID"
+        created_at: "Create at"
+        update_at: "Update at"
+        image: "Image"
+        action: "Action"
+        edit: "Edit"
+        delete: "Delete"
+        create: "Create"
+        confirm: "Confirm"
+      new:
+        submit: "Create"
+        add_new_room: "Add new room"
+        create_room: "Create room"
+        location_id: "Location ID"
+        bed_detail_id: "Bed Detail ID"
+      create:
+        create_unsuccess: "Create unsuccessful!"
+        created: "Room created!"
+      update:
+        room_updated: "Room updated"
+      destroy:
+        room_deleted: "Room deleted"
+        room_failed: "Room delete failed"
+      edit:
+        create_room: "Create room"
+        edit_room: "Edit room"
+        submit: "Save"
+      show:
+        create_at: "Create at"
+        update_at: "Update at"
+        del_but: "Delete"
+        edit_but: "Edit"
+      modal:
+        confirm: "Are you sure?"
+        del: "Delete"
+        cancel: "Cancel"
+      form:
+        form_name: "Name"
+        form_location_id: "Location ID"
+        form_bed_detail_id: "Bed detail ID"
+        form_occupancy_limit: "Occupancy limit"
+        form_living_room: "Living room"
+        form_bed_room: "Bed room"
+        form_bath_room: "Bath room"
+        form_number_of_bed: "Number of bed"
+        form_quantity: "Quantity"
+        form_price: "Price"
+        form_cancel: "Cancel"
+        enter_name: "Enter name"
+        enter_location_id: "Enter location id"
+        enter_bed_detail_id: "Enter bed detail id"
+        enter_occupancy_limit: "Enter occupancy limit"
+        enter_living_room: "Enter living room"
+        enter_bed_room: "Enter bed room"
+        enter_bath_room: "Enter bath room"
+        enter_number_of_bed: "Enter number of bed"
+        enter_quantity: "Enter quantity"
+        enter_price: "Enter price"

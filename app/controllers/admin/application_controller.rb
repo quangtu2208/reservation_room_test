@@ -3,8 +3,8 @@ module Admin
     protect_from_forgery with: :exception
     include SessionsHelper
 
-    before_action :logged_in?
-    before_action :admin_user
+    #before_action :logged_in_user
+    #before_action :admin_user
 
     private
     def logged_in_user

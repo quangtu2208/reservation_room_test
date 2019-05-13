@@ -25,5 +25,8 @@ Rails.application.routes.draw do
 
   namespace :manager do
     root "static_pages#home"
+    resources :rooms do
+      get "search", on: :collection
+    end
   end
 end

@@ -3,6 +3,6 @@
   <td><%= user.email %></td>
   <td><%= user.role_badge %></td>
   <td><%= user.status_badge %></td>
-  <td><%= user.created_at.strftime("%H:%M-%d/%m/%Y") %></td>
-  <td><%= user.updated_at.strftime("%H:%M-%d/%m/%Y") %></td>
+  <td><%= user.created_at.strftime(Settings.datetime_format) %></td>
+  <td><%= user.updated_at.strftime(Settings.datetime_format) %></td>
 </tr>
