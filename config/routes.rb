@@ -32,5 +32,8 @@ Rails.application.routes.draw do
     resources :rooms do
       get "search", on: :collection
     end
+    resources :locations do
+      get "search", on: :collection
+    end
   end
 end

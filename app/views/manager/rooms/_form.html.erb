@@ -13,6 +13,10 @@
     <%= f.label :bed_detail_id, t(".form_bed_detail_id")%>
     <%= f.text_field :bed_detail_id, class: "form-control", placeholder: t(".enter_bed_detail_id") %>
   </div>
+  <div class="field">
+    <%= f.label :pictures %>
+    <%= f.file_field :pictures, multiple: true, accept: "image/jpeg, image/jpg, image/gif, image/png" %>
+  </div>
   <div class="form-group">
     <%= f.label :occupancy_limit, t(".form_occupancy_limit")%>
     <%= f.text_field :occupancy_limit, class: "form-control", placeholder: t(".enter_occupancy_limit") %>
@@ -27,19 +31,19 @@
   </div>
   <div class="form-group">
     <%= f.label :bath_room, t(".form_bath_room") %>
-    <%= f.password_field :bath_room, class: "form-control", placeholder: t(".enter_bath_room") %>
+    <%= f.text_field :bath_room, class: "form-control", placeholder: t(".enter_bath_room") %>
   </div>
   <div class="form-group">
     <%= f.label :number_of_bed, t(".form_number_of_bed") %>
-    <%= f.password_field :number_of_bed, class: "form-control", placeholder: t(".enter_number_of_bed") %>
+    <%= f.text_field :number_of_bed, class: "form-control", placeholder: t(".enter_number_of_bed") %>
   </div>
   <div class="form-group">
     <%= f.label :quantity, t(".form_quantity") %>
-    <%= f.password_field :quantity, class: "form-control", placeholder: t(".enter_quantity") %>
+    <%= f.text_field :quantity, class: "form-control", placeholder: t(".enter_quantity") %>
   </div>
   <div class="form-group">
     <%= f.label :price, t(".form_price") %>
-    <%= f.password_field :price, class: "form-control", placeholder: t(".enter_price") %>
+    <%= f.text_field :price, class: "form-control", placeholder: t(".enter_price") %>
   </div>
     <%= f.button yield(:button_text), class: "btn btn-success mr-2" %>
     <%= link_to t(".form_cancel"), request.referer, class: "btn btn-light" %>

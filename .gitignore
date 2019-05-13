@@ -61,5 +61,6 @@ config/storage.yml
 
 test/*
 log/*
+public/javascripts/translations.js
 # Ignore application configuration
 /config/application.yml

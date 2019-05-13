@@ -32,5 +32,22 @@
         </ul>
       </div>
     </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="collapse" href="#locations" aria-expanded="false" aria-controls="locations">
+        <i class="menu-icon mdi mdi-city"></i>
+        <span class="menu-title"><%= t ".locations" %></span>
+        <i class="menu-arrow"></i>
+      </a>
+      <div class="collapse" id="locations">
+        <ul class="nav flex-column sub-menu">
+          <li class="nav-item">
+            <%= link_to t(".list_location"), manager_locations_path, class: "nav-link"  %>
+          </li>
+          <li class="nav-item">
+            <%= link_to t(".create_location"), new_manager_location_path, class: "nav-link"  %>
+          </li>
+        </ul>
+      </div>
+    </li>
   </ul>
 </nav>
