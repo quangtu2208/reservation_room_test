@@ -1,4 +1,7 @@
 en:
+  time:
+    formats:
+      full: "%H:%M-%d/%m/%Y"
   layouts:
     admin:
       application:
@@ -14,8 +17,11 @@ en:
         new_location: "New location registration"
       sidebar:
         accounts: "Accounts"
-        list_account: "List Accounts"
+        list_accounts: "List Accounts"
         new_account: "New Account"
+        location_types: "Location Types"
+        list_location_types: "List Location Types"
+        new_location_type: "New Location Type"
     application:
       base_title: "Room booking"
     header:
@@ -52,6 +58,44 @@ en:
         status: "Status"
         create_at: "Created at"
         update_at: "Updated at"
+      create:
+        create_success: "Create account success"
+      update:
+        update_success: "Profile updated"
+      destroy:
+        destroy_success: "Account deleted"
+        destroy_fail: "Can't delete"
+    location_types:
+      new:
+        page_title: "Create location type"
+        form_submit: "Create"
+      form:
+        form_name: "Name"
+        form_cancel: "Cancel"
+      modal:
+        confirm: "Are you sure?"
+        del: "Delete"
+        cancel: "Cancel"
+      edit:
+        page_title: "Update location type"
+        form_submit: "Save"
+      show:
+        create_at: "Create at"
+        update_at: "Update at"
+        del_but: "Delete"
+        edit_but: "Edit"
+      index:
+        page_title: "List location types"
+        name: "Name"
+        create_at: "Created at"
+        update_at: "Updated at"
+      create:
+        create_success: "Create location type success"
+      update:
+        update_success: "Location type updated"
+      destroy:
+        destroy_success: "Location type deleted"
+        destroy_fail: "Can't delete"
 
   shared:
     error_messages:
@@ -74,10 +118,4 @@ en:
         your password will stay as it is."
 
   controllers:
-    admin:
-      users:
-        create_success: "Create account success"
-        update_success: "Profile updated"
-        login_check: "Please log in."
-        destroy_success: "User deleted"
-        destroy_fail: "Can't delete"
+    login_check: "Please log in !"

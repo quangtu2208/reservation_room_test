@@ -60,6 +60,6 @@ config/database.yml
 config/storage.yml
 
 test/*
-
+log/*
 # Ignore application configuration
 /config/application.yml

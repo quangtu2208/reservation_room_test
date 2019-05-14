@@ -23,10 +23,27 @@
       <div class="collapse" id="accounts">
         <ul class="nav flex-column sub-menu">
           <li class="nav-item">
-            <%= link_to t(".list_account"), admin_users_path, class: "nav-link" %>
+            <%= link_to t(".list_accounts"), admin_users_path, class: "nav-link" %>
           </li>
           <li class="nav-item">
             <%= link_to t(".new_account"), new_admin_user_path, class: "nav-link" %>
+          </li>
+        </ul>
+      </div>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="collapse" href="#location_types" aria-expanded="false" aria-controls="location_types">
+        <i class="menu-icon mdi mdi-account-multiple"></i>
+        <span class="menu-title"><%= t ".location_types" %></span>
+        <i class="menu-arrow"></i>
+      </a>
+      <div class="collapse" id="location_types">
+        <ul class="nav flex-column sub-menu">
+          <li class="nav-item">
+            <%= link_to t(".list_location_types"), admin_location_types_path, class: "nav-link" %>
+          </li>
+          <li class="nav-item">
+            <%= link_to t(".new_location_type"), new_admin_location_type_path, class: "nav-link" %>
           </li>
         </ul>
       </div>

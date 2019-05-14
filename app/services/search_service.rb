@@ -1,11 +1,11 @@
-class SearchQuery
+class SearchService
   def initialize model, params, fields
     @model = model
     @params = params
     @fields = fields
   end
 
-  def all
+  def all_records
     return search_all if @params[:field] == "all"
     search
   end
