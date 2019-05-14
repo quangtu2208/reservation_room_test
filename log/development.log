@@ -24698,3 +24698,2423 @@ Processing by Manager::RoomsController#new as HTML
 Completed 200 OK in 51ms (Views: 48.9ms | ActiveRecord: 0.0ms)
 
 
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK('6831639285508026675', 0)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ bin/rails:9
+Migrating to AddPicturesToRooms (20190514064652)
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE `rooms` ADD `pictures` json[0m
+  ↳ db/migrate/20190514064652_add_pictures_to_rooms.rb:3
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT RELEASE_LOCK('6831639285508026675')[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ bin/rails:9
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT GET_LOCK('6831639285508026675', 0)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ bin/rails:9
+Migrating to AddPicturesToRooms (20190514064652)
+  [1m[35m (1.5ms)[0m  [1m[35mALTER TABLE `rooms` ADD `pictures` json[0m
+  ↳ db/migrate/20190514064652_add_pictures_to_rooms.rb:3
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('6831639285508026675')[0m
+  ↳ bin/rails:9
+Started GET "/manager/rooms/new" for ::1 at 2019-05-14 13:48:25 +0700
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/quangtu/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/quangtu/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.3) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.3) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/manager/rooms" for ::1 at 2019-05-14 13:48:34 +0700
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/quangtu/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.3) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.3) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  ↳ bin/rails:9
+  [1m[35m (11.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ bin/rails:9
+  [1m[35m (99.3ms)[0m  [1m[35mDROP DATABASE IF EXISTS `mini-booking`[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ bin/rails:9
+  [1m[35m (3.0ms)[0m  [1m[35mDROP DATABASE IF EXISTS `room-booking_test`[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE DATABASE `mini-booking` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE DATABASE `room-booking_test` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ bin/rails:9
+  [1m[35m (16.1ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (16.5ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('6831639285508026675', 0)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateUsers (20190509014646)
+  [1m[35m (19.1ms)[0m  [1m[35mCREATE TABLE `users` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `email` varchar(255) NOT NULL, `password_digest` varchar(255), `remember_digest` varchar(255), `admin` tinyint(1) DEFAULT FALSE, `activation_digest` varchar(255), `activated` tinyint(1) DEFAULT FALSE, `activated_at` datetime, `reset_digest` varchar(255), `reset_sent_at` datetime, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL, UNIQUE INDEX `index_users_on_email`  (`email`))[0m
+  ↳ db/migrate/20190509014646_create_users.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190509014646')[0m
+  ↳ bin/rails:9
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateReservations (20190509015240)
+  [1m[35m (19.0ms)[0m  [1m[35mCREATE TABLE `reservations` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `user_id` bigint, `total_bill` decimal(12,3), `status` tinyint(1) DEFAULT FALSE, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_reservations_on_user_id`  (`user_id`), CONSTRAINT `fk_rails_48a92fce51`
+FOREIGN KEY (`user_id`)
+  REFERENCES `users` (`id`)
+)[0m
+  ↳ db/migrate/20190509015240_create_reservations.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190509015240')[0m
+  ↳ bin/rails:9
+  [1m[35m (4.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateLocationTypes (20190509015342)
+  [1m[35m (16.4ms)[0m  [1m[35mCREATE TABLE `location_types` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20190509015342_create_location_types.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190509015342')[0m
+  ↳ bin/rails:9
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateLocations (20190509015418)
+  [1m[35m (27.7ms)[0m  [1m[35mCREATE TABLE `locations` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `user_id` bigint, `location_type_id` bigint, `name` varchar(255), `location` varchar(255), `national` varchar(255), `zip_code` varchar(255), `description` varchar(255), `status` tinyint(1) DEFAULT FALSE, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_locations_on_user_id`  (`user_id`),  INDEX `index_locations_on_location_type_id`  (`location_type_id`), UNIQUE INDEX `index_locations_on_name`  (`name`),  INDEX `index_locations_on_national`  (`national`), CONSTRAINT `fk_rails_5e107925c6`
+FOREIGN KEY (`user_id`)
+  REFERENCES `users` (`id`)
+, CONSTRAINT `fk_rails_a13c883eb0`
+FOREIGN KEY (`location_type_id`)
+  REFERENCES `location_types` (`id`)
+)[0m
+  ↳ db/migrate/20190509015418_create_locations.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190509015418')[0m
+  ↳ bin/rails:9
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateReviews (20190509015518)
+  [1m[35m (23.3ms)[0m  [1m[35mCREATE TABLE `reviews` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `user_id` bigint, `location_id` bigint, `comment` varchar(255), `rate` tinyint NOT NULL, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_reviews_on_user_id`  (`user_id`),  INDEX `index_reviews_on_location_id`  (`location_id`),  INDEX `index_reviews_on_rate`  (`rate`), CONSTRAINT `fk_rails_74a66bd6c5`
+FOREIGN KEY (`user_id`)
+  REFERENCES `users` (`id`)
+, CONSTRAINT `fk_rails_b82013c5ae`
+FOREIGN KEY (`location_id`)
+  REFERENCES `locations` (`id`)
+)[0m
+  ↳ db/migrate/20190509015518_create_reviews.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190509015518')[0m
+  ↳ bin/rails:9
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateBedDetails (20190509015605)
+  [1m[35m (17.2ms)[0m  [1m[35mCREATE TABLE `bed_details` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20190509015605_create_bed_details.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190509015605')[0m
+  ↳ bin/rails:9
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateRooms (20190509015648)
+  [1m[35m (21.8ms)[0m  [1m[35mCREATE TABLE `rooms` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `occupancy_limit` smallint, `living_room` tinyint, `bed_room` tinyint, `bath_room` tinyint, `number_of_bed` tinyint, `quantity` tinyint NOT NULL, `price` decimal(12,3), `bed_detail_id` bigint, `location_id` bigint, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_rooms_on_bed_detail_id`  (`bed_detail_id`),  INDEX `index_rooms_on_location_id`  (`location_id`), CONSTRAINT `fk_rails_cf1dacabbe`
+FOREIGN KEY (`bed_detail_id`)
+  REFERENCES `bed_details` (`id`)
+, CONSTRAINT `fk_rails_ee81f621d0`
+FOREIGN KEY (`location_id`)
+  REFERENCES `locations` (`id`)
+)[0m
+  ↳ db/migrate/20190509015648_create_rooms.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190509015648')[0m
+  ↳ bin/rails:9
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateReservationDetails (20190509015805)
+  [1m[35m (27.1ms)[0m  [1m[35mCREATE TABLE `reservation_details` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `description` varchar(255), `start_date` datetime, `end_date` datetime, `reservation_id` bigint, `room_id` bigint, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_reservation_details_on_start_date`  (`start_date`),  INDEX `index_reservation_details_on_end_date`  (`end_date`),  INDEX `index_reservation_details_on_reservation_id`  (`reservation_id`),  INDEX `index_reservation_details_on_room_id`  (`room_id`), CONSTRAINT `fk_rails_1176aadb86`
+FOREIGN KEY (`reservation_id`)
+  REFERENCES `reservations` (`id`)
+, CONSTRAINT `fk_rails_8f01e4778b`
+FOREIGN KEY (`room_id`)
+  REFERENCES `rooms` (`id`)
+)[0m
+  ↳ db/migrate/20190509015805_create_reservation_details.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190509015805')[0m
+  ↳ bin/rails:9
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateServices (20190509015838)
+  [1m[35m (17.6ms)[0m  [1m[35mCREATE TABLE `services` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20190509015838_create_services.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190509015838')[0m
+  ↳ bin/rails:9
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateRoomsServices (20190509015927)
+  [1m[35m (21.7ms)[0m  [1m[35mCREATE TABLE `rooms_services` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `room_id` bigint, `service_id` bigint, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_rooms_services_on_room_id`  (`room_id`),  INDEX `index_rooms_services_on_service_id`  (`service_id`), CONSTRAINT `fk_rails_2a21909fed`
+FOREIGN KEY (`room_id`)
+  REFERENCES `rooms` (`id`)
+, CONSTRAINT `fk_rails_524d1ad693`
+FOREIGN KEY (`service_id`)
+  REFERENCES `services` (`id`)
+)[0m
+  ↳ db/migrate/20190509015927_create_rooms_services.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190509015927')[0m
+  ↳ bin/rails:9
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateImages (20190509020020)
+  [1m[35m (18.8ms)[0m  [1m[35mCREATE TABLE `images` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `path` varchar(255), `imageable_type` varchar(255), `imageable_id` bigint, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL,  INDEX `index_images_on_imageable_type_and_imageable_id`  (`imageable_type`, `imageable_id`))[0m
+  ↳ db/migrate/20190509020020_create_images.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190509020020')[0m
+  ↳ bin/rails:9
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to DropImages (20190514010130)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190514010130')[0m
+  ↳ bin/rails:9
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to AddPicturesToRooms (20190514064652)
+  [1m[35m (29.6ms)[0m  [1m[35mALTER TABLE `rooms` ADD `pictures` json[0m
+  ↳ db/migrate/20190514064652_add_pictures_to_rooms.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190514064652')[0m
+  ↳ bin/rails:9
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to AddPicturesToLocations (20190514064757)
+  [1m[35m (35.8ms)[0m  [1m[35mALTER TABLE `locations` ADD `pictures` json[0m
+  ↳ db/migrate/20190514064757_add_pictures_to_locations.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190514064757')[0m
+  ↳ bin/rails:9
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2019-05-14 06:48:42', '2019-05-14 06:48:42')[0m
+  ↳ bin/rails:9
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT RELEASE_LOCK('6831639285508026675')[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ bin/rails:9
+Started GET "/manager/rooms" for ::1 at 2019-05-14 13:48:44 +0700
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/quangtu/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by Manager::RoomsController#index as HTML
+  Rendering manager/rooms/index.html.erb within layouts/manager/application
+  Rendered shared/_search.html.erb (0.6ms)
+  [1m[36mRoom Load (0.3ms)[0m  [1m[34mSELECT  `rooms`.* FROM `rooms` LIMIT 25 OFFSET 0[0m
+  ↳ app/views/manager/rooms/index.html.erb:25
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered manager/rooms/index.html.erb within layouts/manager/application (4.4ms)
+  Rendered layouts/manager/_meta.html.erb (0.3ms)
+  Rendered layouts/manager/_style.html.erb (12.7ms)
+  Rendered layouts/manager/_nav.html.erb (2.3ms)
+  Rendered layouts/manager/_sidebar.html.erb (0.7ms)
+  Rendered layouts/manager/_footer.html.erb (0.2ms)
+  Rendered layouts/manager/_js.html.erb (30.2ms)
+Completed 200 OK in 62ms (Views: 53.6ms | ActiveRecord: 0.6ms)
+
+
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ bin/rails:9
+Creating scope :activated. Overwriting existing method User.activated.
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:6
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'admin-1@admin.com' LIMIT 1[0m
+  ↳ db/seeds.rb:6
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `admin`, `activation_digest`, `activated`, `activated_at`, `created_at`, `updated_at`) VALUES ('Admin-1', 'admin-1@admin.com', '$2a$10$0X3g6psu/Ua8EWeCJRAEV.uHZCIg9tSwt1HlWNX2E0ydhPG3mvEYO', TRUE, '$2a$10$E86jzb48oXzNG5ubTxbQfORMJ6UJ5EN5nGkHargZ6k..cXzx6U5qq', TRUE, '2019-05-14 06:49:15', '2019-05-14 06:49:15', '2019-05-14 06:49:15')[0m
+  ↳ db/seeds.rb:6
+  [1m[35m (2.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:6
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:6
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'admin-2@admin.com' LIMIT 1[0m
+  ↳ db/seeds.rb:6
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `admin`, `activation_digest`, `activated`, `activated_at`, `created_at`, `updated_at`) VALUES ('Admin-2', 'admin-2@admin.com', '$2a$10$rbOLYSKOr9Dya8ahOA/OGu77zZDr6RVHNwPlDO5HsAKrV/ZpE9XLu', TRUE, '$2a$10$h50zJ12a6Vj0HrZdVlCggu9sHeYVQWqS4AVl11TVkSGvzJa0JsX9C', TRUE, '2019-05-14 06:49:16', '2019-05-14 06:49:16', '2019-05-14 06:49:16')[0m
+  ↳ db/seeds.rb:6
+  [1m[35m (4.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:6
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:6
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'admin-3@admin.com' LIMIT 1[0m
+  ↳ db/seeds.rb:6
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `admin`, `activation_digest`, `activated`, `activated_at`, `created_at`, `updated_at`) VALUES ('Admin-3', 'admin-3@admin.com', '$2a$10$FpiLZEiOq3MZPPQeX/aok.qV1o/WWpCCEVi1kxJgyNJ0gVAxPwkF6', TRUE, '$2a$10$JRCOcPgPNCSFDnVUGjY8S.XKoPWdkD7Q.SKyrbyKp6G8mr6SDM6Ly', TRUE, '2019-05-14 06:49:16', '2019-05-14 06:49:16', '2019-05-14 06:49:16')[0m
+  ↳ db/seeds.rb:6
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:6
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:6
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'admin-4@admin.com' LIMIT 1[0m
+  ↳ db/seeds.rb:6
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `admin`, `activation_digest`, `activated`, `activated_at`, `created_at`, `updated_at`) VALUES ('Admin-4', 'admin-4@admin.com', '$2a$10$a2puCTm1oF3Ao3xMT0YP8O6gxEDDS5FEoGljHVSGtmF4iD2WfOwea', TRUE, '$2a$10$dyuCioja3JnJEiuykN7P5.yHuim.GEsmxc52eV41MPJ6P6MW95DDK', TRUE, '2019-05-14 06:49:16', '2019-05-14 06:49:16', '2019-05-14 06:49:16')[0m
+  ↳ db/seeds.rb:6
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:6
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:6
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'admin-5@admin.com' LIMIT 1[0m
+  ↳ db/seeds.rb:6
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `admin`, `activation_digest`, `activated`, `activated_at`, `created_at`, `updated_at`) VALUES ('Admin-5', 'admin-5@admin.com', '$2a$10$Ej.l6lWnrN3bJaUpoHiC5u2iDHLPWNOkmw87o9f253SqGTEKXhA0C', TRUE, '$2a$10$EbYc8V5ujV7ApolbuFt2QO.fTnKFDukU7NfY5Rzp4tkoKk.3GPKsa', TRUE, '2019-05-14 06:49:16', '2019-05-14 06:49:16', '2019-05-14 06:49:16')[0m
+  ↳ db/seeds.rb:6
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:6
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'user-1@user.com' LIMIT 1[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `activation_digest`, `activated`, `activated_at`, `created_at`, `updated_at`) VALUES ('Xiomara White', 'user-1@user.com', '$2a$10$9uVGtV7/W2q/Pi.VEr33rOQQvmZBgokhrc9lRod6vLw9nV/oYe9n2', '$2a$10$sIBjGAmRX294kEnnpbOtrOp2MGlFQT645j30XhdWLEjQqMNucJQBG', TRUE, '2019-05-14 06:49:16', '2019-05-14 06:49:16', '2019-05-14 06:49:16')[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'user-2@user.com' LIMIT 1[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `activation_digest`, `activated`, `activated_at`, `created_at`, `updated_at`) VALUES ('Deandrea Schuppe', 'user-2@user.com', '$2a$10$UNIC1/MSbO/Yjbc1SmEzYebPxIepPWj5VNgg5BahrG20d1nFkMXUS', '$2a$10$ToA1YBsqXoTByiphXge9fO3Bh/S8GU0bmbr.8YL607moF6yNAkLLO', TRUE, '2019-05-14 06:49:16', '2019-05-14 06:49:16', '2019-05-14 06:49:16')[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'user-3@user.com' LIMIT 1[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `activation_digest`, `activated`, `activated_at`, `created_at`, `updated_at`) VALUES ('Shaquita Heaney', 'user-3@user.com', '$2a$10$GuH90BADU1pCj7Zx1V1PbeX/CGC18J5M67Vt.ZYH3lAqtfJKkcwiG', '$2a$10$cAUz008GDs7VrbCPkqgvoeskH6BW/fZdTQnXrtOyqPbYbl3YBDmam', TRUE, '2019-05-14 06:49:16', '2019-05-14 06:49:16', '2019-05-14 06:49:16')[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'user-4@user.com' LIMIT 1[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.1ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `activation_digest`, `activated`, `activated_at`, `created_at`, `updated_at`) VALUES ('Earlean Kuhlman', 'user-4@user.com', '$2a$10$yyDGoX4N0fXztv/aBjuJiu2.QNz92HbZpGn68LYoQZHlpyB/2XKi6', '$2a$10$hFejFWMb3f2ds.sUV5rUp.sk.xoZLR5ik60ZcldwDW0Go8PS22Bqi', TRUE, '2019-05-14 06:49:16', '2019-05-14 06:49:16', '2019-05-14 06:49:16')[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'user-5@user.com' LIMIT 1[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `activation_digest`, `activated`, `activated_at`, `created_at`, `updated_at`) VALUES ('Rina Kunze', 'user-5@user.com', '$2a$10$A0rWqQFr6xC./P9eeKlpHeagjCedUoegABXEMjaENpd.sXBRcU2lm', '$2a$10$CaB3LIunt947PGdt4r32yOSgEHRG//kHIf/.4TKgjQye.Evw7E6KW', TRUE, '2019-05-14 06:49:17', '2019-05-14 06:49:17', '2019-05-14 06:49:17')[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (3.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'user-6@user.com' LIMIT 1[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.1ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `activation_digest`, `activated`, `activated_at`, `created_at`, `updated_at`) VALUES ('Chong Tremblay', 'user-6@user.com', '$2a$10$ru9XUZ09r7M1vGLggtFYduNqXlXUS8H8E0QzdNKK0ekYI7mO2e/LS', '$2a$10$c18gEcz60gN08X3mLOZbA.KVW9HYsiKct9NCKUV5MR9zcVThCyAKO', TRUE, '2019-05-14 06:49:17', '2019-05-14 06:49:17', '2019-05-14 06:49:17')[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'user-7@user.com' LIMIT 1[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `activation_digest`, `activated`, `activated_at`, `created_at`, `updated_at`) VALUES ('Marielle Cole', 'user-7@user.com', '$2a$10$HZ78Mrs1.0q9YItvpAnC9uyIwH.hhSvkLamNEZ3B7fc92xS8xNTWO', '$2a$10$Eb7eDDcIgdGVjIsjNiiCsu5F4fw5WnmY2gy5gsdiLw0REUzOih6xy', TRUE, '2019-05-14 06:49:17', '2019-05-14 06:49:17', '2019-05-14 06:49:17')[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'user-8@user.com' LIMIT 1[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `activation_digest`, `activated`, `activated_at`, `created_at`, `updated_at`) VALUES ('Kristan Kunze', 'user-8@user.com', '$2a$10$QJofrzqFN.Jd640LaXz12ezR.MLuuRckxzArU1SdwuoX9.PUOqdoS', '$2a$10$W3ZFyUWSfg0UWJxK2T5JeeNdSSg0Sqqiheatg2xDDT2LWQRr0YHvW', TRUE, '2019-05-14 06:49:17', '2019-05-14 06:49:17', '2019-05-14 06:49:17')[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'user-9@user.com' LIMIT 1[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `activation_digest`, `activated`, `activated_at`, `created_at`, `updated_at`) VALUES ('Man Maggio', 'user-9@user.com', '$2a$10$KKX3EUSsWq1nKMHu8Iq6ruD/IB/CrUMK5lawbAaC4oj4gY3aeOka2', '$2a$10$wM5prDxoNUlmu4D95ZW5IuW7YT7peISugV.c1rVQcCMT44KaoBx2C', TRUE, '2019-05-14 06:49:17', '2019-05-14 06:49:17', '2019-05-14 06:49:17')[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'user-10@user.com' LIMIT 1[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `activation_digest`, `activated`, `activated_at`, `created_at`, `updated_at`) VALUES ('Mollie Harris', 'user-10@user.com', '$2a$10$jUOqd4dTdMJcSPnmY/aAn.H8yvUw0sfPoI4s1cclBE0GL8gwDAB.W', '$2a$10$zm//9I1fgZfFhD5y6T8lceHgHFs2xbIo.kYvzO3t9RKF1jVQp2pgm', TRUE, '2019-05-14 06:49:17', '2019-05-14 06:49:17', '2019-05-14 06:49:17')[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'user-11@user.com' LIMIT 1[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `activation_digest`, `activated`, `activated_at`, `created_at`, `updated_at`) VALUES ('Lovella Ebert', 'user-11@user.com', '$2a$10$YE3ImytJrF6RLBykUK51R.N6OGQE8QOzL.APctBwA.UR/EnNmIL.e', '$2a$10$WlEck8FzTGUCuZo0IUOKEeLoKgTCd1gWQiGS2cg6.wcskKz1olHXK', TRUE, '2019-05-14 06:49:17', '2019-05-14 06:49:17', '2019-05-14 06:49:17')[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'user-12@user.com' LIMIT 1[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `activation_digest`, `activated`, `activated_at`, `created_at`, `updated_at`) VALUES ('Maragaret Treutel', 'user-12@user.com', '$2a$10$cVQ9SzlSstTViHueOUCgouCRseY3Ktv0UqU3Tdyq3mvSRdajwnOkW', '$2a$10$4n1AQNgQNa5ftP4oNc6uxe1yuazKpIlywT9DyliBsnbVTLHh4/Srm', TRUE, '2019-05-14 06:49:17', '2019-05-14 06:49:17', '2019-05-14 06:49:17')[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'user-13@user.com' LIMIT 1[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `activation_digest`, `activated`, `activated_at`, `created_at`, `updated_at`) VALUES ('Mervin Gutkowski', 'user-13@user.com', '$2a$10$He8sZE4mzH11pd.i.iZZduk5tDZKAdXbFifIUGxpwrB53jl4i0v.W', '$2a$10$m1bE6ypvW0TaW9QAP6Q7ZOmjIKst0iU3aVtmLSrblDRNh8tIDb0oq', TRUE, '2019-05-14 06:49:17', '2019-05-14 06:49:18', '2019-05-14 06:49:18')[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'user-14@user.com' LIMIT 1[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `activation_digest`, `activated`, `activated_at`, `created_at`, `updated_at`) VALUES ('Cherise Hettinger', 'user-14@user.com', '$2a$10$UYcynYYAd9oXjalDCGuxh.StyGju5LxMs5y95pX7HETiezR/PhbSe', '$2a$10$.84MJnpUeEzLAdCgospLjuJDQueWonQSeQBm/cl5zt8c6umph1Aaq', TRUE, '2019-05-14 06:49:18', '2019-05-14 06:49:18', '2019-05-14 06:49:18')[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'user-15@user.com' LIMIT 1[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `activation_digest`, `activated`, `activated_at`, `created_at`, `updated_at`) VALUES ('Trudy Auer', 'user-15@user.com', '$2a$10$6JwdknTgRF7tcKslnhnfqOkuKThRV4O74ArwuXu4oy.l8oLif2tya', '$2a$10$x4zmNDeO8s32MYc1zxV1Oey40An9nxQAmET7VHM96q1dpOrKnlnOK', TRUE, '2019-05-14 06:49:18', '2019-05-14 06:49:18', '2019-05-14 06:49:18')[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'user-16@user.com' LIMIT 1[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `activation_digest`, `activated`, `activated_at`, `created_at`, `updated_at`) VALUES ('Malena Weber', 'user-16@user.com', '$2a$10$3mA/MvFabeXfXU9OBMAgb.Yfs5IO1w94CUoflz8Mg2SH39xtBeGPy', '$2a$10$ATfXqazK87ysc.TA1/4BmeVlQ7s49YC0SVVoXYiVoJoOhGkt1NDEG', TRUE, '2019-05-14 06:49:18', '2019-05-14 06:49:18', '2019-05-14 06:49:18')[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'user-17@user.com' LIMIT 1[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `activation_digest`, `activated`, `activated_at`, `created_at`, `updated_at`) VALUES ('Drew Padberg', 'user-17@user.com', '$2a$10$tqtxXluquDzYraPDl8kMqujOR2xPIJCfsTPe4OM61mBuR1TImQgV2', '$2a$10$.nLKM.b8WAsvJzNpGsOrKOFkDx7cw/j1caVwUXKML0ZguwYJ6A4H.', TRUE, '2019-05-14 06:49:18', '2019-05-14 06:49:18', '2019-05-14 06:49:18')[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'user-18@user.com' LIMIT 1[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `activation_digest`, `activated`, `activated_at`, `created_at`, `updated_at`) VALUES ('Kyong Collier', 'user-18@user.com', '$2a$10$mXXU0.APxTyh6H97b1JGEeuvkXIRNVUWQeD.UtVVhJeuRJVEoIzKi', '$2a$10$ohyKzaxBrAwhMmve8Z8JSu4EQMcVodLfC/c3kWdlO2N14MmkXo9YG', TRUE, '2019-05-14 06:49:18', '2019-05-14 06:49:18', '2019-05-14 06:49:18')[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'user-19@user.com' LIMIT 1[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `activation_digest`, `activated`, `activated_at`, `created_at`, `updated_at`) VALUES ('Vertie VonRueden', 'user-19@user.com', '$2a$10$6VTNFm97ItFxHT5tlMDFWeoOwQIIHLstAHxm7e87Lm8XOag6.tHne', '$2a$10$XUfONyWRK1G.V3RE4c/bZ.OW9e3AsD9kJTY6WJtxMO2ZvjXbmri5i', TRUE, '2019-05-14 06:49:18', '2019-05-14 06:49:18', '2019-05-14 06:49:18')[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'user-20@user.com' LIMIT 1[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `activation_digest`, `activated`, `activated_at`, `created_at`, `updated_at`) VALUES ('Margo Rippin', 'user-20@user.com', '$2a$10$NFbtLa8sKBYOeXeBOKS5h.9MZkxFNsUFT0OJVGd7ruv4OTTQWXsme', '$2a$10$bB78oFUiOscJHRtn.4R0lOHe0cmGlNNXeQdvmZRv0McgZOD8NOnwO', TRUE, '2019-05-14 06:49:18', '2019-05-14 06:49:18', '2019-05-14 06:49:18')[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'user-21@user.com' LIMIT 1[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `activation_digest`, `activated`, `activated_at`, `created_at`, `updated_at`) VALUES ('Daniela VonRueden', 'user-21@user.com', '$2a$10$e4oMWzHPQ1E6pwbYWdNrUei81HFbVsSTYW8YVONZWALU/2nqOFDbq', '$2a$10$MpX8AP6fF6UhgrWukhNQCebaCR25xQD8HG9PMKTNWTi2jFWlgz8ki', TRUE, '2019-05-14 06:49:19', '2019-05-14 06:49:19', '2019-05-14 06:49:19')[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'user-22@user.com' LIMIT 1[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `activation_digest`, `activated`, `activated_at`, `created_at`, `updated_at`) VALUES ('Shan Effertz', 'user-22@user.com', '$2a$10$3CQAqLb6ubBrTALFpRSCiePFl1RZewQBB1odH4x4iymLeKenbhnfG', '$2a$10$v9NZx3ouM0srnNhGi4wwRuxl8DBSY/EVgibudtlh9JRvJO.K5TMi.', TRUE, '2019-05-14 06:49:19', '2019-05-14 06:49:19', '2019-05-14 06:49:19')[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'user-23@user.com' LIMIT 1[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `activation_digest`, `activated`, `activated_at`, `created_at`, `updated_at`) VALUES ('Ruth Walsh', 'user-23@user.com', '$2a$10$GfdvppnNVZ6MFMbFCHkW5eglKdKtHqO0aMrhBs9j8Q5spbw0Ejh8.', '$2a$10$fT6D124002YKvTlY9knJYe3HROLrOqtH9GZVyQbQn.rgf5MK7aW6y', TRUE, '2019-05-14 06:49:19', '2019-05-14 06:49:19', '2019-05-14 06:49:19')[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'user-24@user.com' LIMIT 1[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `activation_digest`, `activated`, `activated_at`, `created_at`, `updated_at`) VALUES ('Tanner Blanda', 'user-24@user.com', '$2a$10$VuoHzCRijWKTg4K2o.HB6uzrX8Se3Q9EIDsjU55m5EYgDTMMFxqae', '$2a$10$g.K23bxP5Qaw67yv6ykS3OIlfWajViRC/1I1S/.0D3HCESwzPnkYe', TRUE, '2019-05-14 06:49:19', '2019-05-14 06:49:19', '2019-05-14 06:49:19')[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'user-25@user.com' LIMIT 1[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `activation_digest`, `activated`, `activated_at`, `created_at`, `updated_at`) VALUES ('Arnold Bins', 'user-25@user.com', '$2a$10$8pkI4exJfgLbtXgm3HY0VuMR07FeLv9nJuf5UchxZhJXheVRsuaRO', '$2a$10$9DIvG8uFRFayA.HVuWEObekhtDqOB1Tgx.Bjwap3BQOikoC65qSja', TRUE, '2019-05-14 06:49:19', '2019-05-14 06:49:19', '2019-05-14 06:49:19')[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'user-26@user.com' LIMIT 1[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `activation_digest`, `activated`, `activated_at`, `created_at`, `updated_at`) VALUES ('Abdul Medhurst', 'user-26@user.com', '$2a$10$u3Huz9aQ61XEYPGEgz7xdesBqG8iZ4RrGZMto1bRrPXb6viyb4Ch.', '$2a$10$ivgXaASaKUjCNHS6Z5jORedpM5JoYLm9FDybEuon5B0KdLpcn57x.', TRUE, '2019-05-14 06:49:19', '2019-05-14 06:49:19', '2019-05-14 06:49:19')[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'user-27@user.com' LIMIT 1[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `activation_digest`, `activated`, `activated_at`, `created_at`, `updated_at`) VALUES ('Tabitha Hodkiewicz', 'user-27@user.com', '$2a$10$tIDf7JC5T9rCj/.GpjwbnuGv.YZoQeoWRzGkle.Nvq3OxC1EjlQ6y', '$2a$10$v8BCEcsYzEST4jQ6.QvhAOAMR1iBC4vhNpzHYEPEQLs9/wL.syD22', TRUE, '2019-05-14 06:49:19', '2019-05-14 06:49:19', '2019-05-14 06:49:19')[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'user-28@user.com' LIMIT 1[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `activation_digest`, `activated`, `activated_at`, `created_at`, `updated_at`) VALUES ('Willian Dicki', 'user-28@user.com', '$2a$10$/K4AQkQDIgjLKGE.Ddm/aORJNSAPM0dgfgYqk13qTQ/QiI1czSntq', '$2a$10$aTjkfMvyPMX9.Ui4c68P.OyG7V74K6Ae8kkPhL18j562azxEEfg7e', TRUE, '2019-05-14 06:49:19', '2019-05-14 06:49:19', '2019-05-14 06:49:19')[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'user-29@user.com' LIMIT 1[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `activation_digest`, `activated`, `activated_at`, `created_at`, `updated_at`) VALUES ('Hildegard Osinski', 'user-29@user.com', '$2a$10$NBam67i/t2YA69vL0gGm9uZzZr6b2kjQpAIBqZMf3./d0HQg4UUeS', '$2a$10$rwcW2mn6MB7t4wTtY9VTv.0rcqXqch0L4TKoVBD27kKm.XycEusKe', TRUE, '2019-05-14 06:49:19', '2019-05-14 06:49:20', '2019-05-14 06:49:20')[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'user-30@user.com' LIMIT 1[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `activation_digest`, `activated`, `activated_at`, `created_at`, `updated_at`) VALUES ('Parker Murphy', 'user-30@user.com', '$2a$10$anu95VqPpcOyS2dgtGFdp.Qa2TLYxFlia/LMrEZC9BkLiBow8ON76', '$2a$10$a4YVK62N8IdDj2hGAnfw1OYxSUbQvhZJYzkmIwk5GNxJHukuXFYRu', TRUE, '2019-05-14 06:49:20', '2019-05-14 06:49:20', '2019-05-14 06:49:20')[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'user-31@user.com' LIMIT 1[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `activation_digest`, `activated`, `activated_at`, `created_at`, `updated_at`) VALUES ('Merilyn Pacocha', 'user-31@user.com', '$2a$10$w6ZtGyEWUkgBDYXbkZ0VXeCA6Xm2ipc/HgA9qMFRflWNT7BqYg9Ba', '$2a$10$0bKI5oT80cDBJoeGaww8Oedl2S7I..5iaGYWL/.ud2MZZSdndoCmG', TRUE, '2019-05-14 06:49:20', '2019-05-14 06:49:20', '2019-05-14 06:49:20')[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'user-32@user.com' LIMIT 1[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `activation_digest`, `activated`, `activated_at`, `created_at`, `updated_at`) VALUES ('Trula Rempel', 'user-32@user.com', '$2a$10$cMkBE6UCN6ssGxMBP2vvlu4CeI5vyZI7pEG4BoR3sX4qecX3dIDCS', '$2a$10$8CuhRJA358XqejMLaItIvek6N5M0hdg.1vApVsPb38JFxlc0hNZB6', TRUE, '2019-05-14 06:49:20', '2019-05-14 06:49:20', '2019-05-14 06:49:20')[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'user-33@user.com' LIMIT 1[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `activation_digest`, `activated`, `activated_at`, `created_at`, `updated_at`) VALUES ('Salvador Wunsch', 'user-33@user.com', '$2a$10$zCs8FVRcvOuwc7B9qoZcOer.KaiMOgA4isZ7HO698HJV/q1c/KkTq', '$2a$10$s9PW7Th1PPxlsn6OVpiy6uypztUVFzYRcwaWOXu/s6yERndD3BjmW', TRUE, '2019-05-14 06:49:20', '2019-05-14 06:49:20', '2019-05-14 06:49:20')[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'user-34@user.com' LIMIT 1[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `activation_digest`, `activated`, `activated_at`, `created_at`, `updated_at`) VALUES ('Maurita Ernser', 'user-34@user.com', '$2a$10$MCmcIs81OmCC1sruSv/dcuwBS2yzm.QjZFkcRKEoXhOsyqhEFng/q', '$2a$10$819JHIxUP2UVV3VBAcLtiudMze76HrN/qWBWOej9dn7J9bjWUmKB6', TRUE, '2019-05-14 06:49:20', '2019-05-14 06:49:20', '2019-05-14 06:49:20')[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'user-35@user.com' LIMIT 1[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `activation_digest`, `activated`, `activated_at`, `created_at`, `updated_at`) VALUES ('Tawanna Kautzer', 'user-35@user.com', '$2a$10$kBpLhzRJc35BZv498Zkl7.l4IPjXqyc9Fo2nRB66Ij/42eWhSWaqm', '$2a$10$zAbkBoXouiK6zmkIXmlXTem5JJzAsP3YzqzVtH4F1sSwkbJSW6W0a', TRUE, '2019-05-14 06:49:20', '2019-05-14 06:49:20', '2019-05-14 06:49:20')[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'user-36@user.com' LIMIT 1[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `activation_digest`, `activated`, `activated_at`, `created_at`, `updated_at`) VALUES ('Matilde Boyle', 'user-36@user.com', '$2a$10$hEkoIJMIHMDIR9Jtfkwx3enVMdO8f1qbt0nn1/IzMSaRNgMMi2NtG', '$2a$10$PjKnHlfXJ3cZP8DjbrER3ubT33kvCH4bVkErUfP1OhaTQlfS8jonG', TRUE, '2019-05-14 06:49:20', '2019-05-14 06:49:20', '2019-05-14 06:49:20')[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (4.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'user-37@user.com' LIMIT 1[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `activation_digest`, `activated`, `activated_at`, `created_at`, `updated_at`) VALUES ('Reyna Feeney', 'user-37@user.com', '$2a$10$.BLfIc9IPOApgmPwKOVCc.WQRZCHETzo1uebJq/B2loZ6ymukjagS', '$2a$10$OoVuwWifplIOkCoRlzQzMeO732T3WbA1OcY2lo.pmS7.V/784nJrq', TRUE, '2019-05-14 06:49:20', '2019-05-14 06:49:20', '2019-05-14 06:49:20')[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (4.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'user-38@user.com' LIMIT 1[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `activation_digest`, `activated`, `activated_at`, `created_at`, `updated_at`) VALUES ('Alayna Mills', 'user-38@user.com', '$2a$10$XNqO9ZU0tjnOp4YqYQ3s4.7T54/7SBnK/3ue2rISk7V5bhaMQ1Zfe', '$2a$10$1XD4D0pMJPASml6qv9InZ.K3oL395ewsKeB5fNk0R9tjerQRUJqLa', TRUE, '2019-05-14 06:49:21', '2019-05-14 06:49:21', '2019-05-14 06:49:21')[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (4.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'user-39@user.com' LIMIT 1[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `activation_digest`, `activated`, `activated_at`, `created_at`, `updated_at`) VALUES ('Jannet Dibbert', 'user-39@user.com', '$2a$10$aTL/hUPrc9akqhao3QlHZ.pWsZl43bBWzJEqDis2WDUMfmj02cPTu', '$2a$10$akhtSnvHJ1WdRtr.G/69r.po2ARZEl0sMF/XN3Uum7HNlZSm2Gos.', TRUE, '2019-05-14 06:49:21', '2019-05-14 06:49:21', '2019-05-14 06:49:21')[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (4.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'user-40@user.com' LIMIT 1[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.1ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `activation_digest`, `activated`, `activated_at`, `created_at`, `updated_at`) VALUES ('Awilda Shields', 'user-40@user.com', '$2a$10$DMrriQsEKsw19a6Pm1GiCuD3iUYxoIqYjmQBg6MMt0ELZdBDPhBwy', '$2a$10$g8SWwAAKdriOVM4H8Z3HbOwmsF2puwNEAQVGmViF1sk2CjnqjrlQq', TRUE, '2019-05-14 06:49:21', '2019-05-14 06:49:21', '2019-05-14 06:49:21')[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (4.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'user-41@user.com' LIMIT 1[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `activation_digest`, `activated`, `activated_at`, `created_at`, `updated_at`) VALUES ('Avelina Mann', 'user-41@user.com', '$2a$10$eyf9AdBrFaZIsVs8EuYY4.qlKlsZSbR/26h7U/V/PdaY0w36MeU/S', '$2a$10$KwTOb5cMrvwvB7eC/P1Umu9s5gcuh5fSxqk0oYDUbOs7dOgh1gYoK', TRUE, '2019-05-14 06:49:21', '2019-05-14 06:49:21', '2019-05-14 06:49:21')[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (4.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'user-42@user.com' LIMIT 1[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `activation_digest`, `activated`, `activated_at`, `created_at`, `updated_at`) VALUES ('Merrill Howe', 'user-42@user.com', '$2a$10$WVqlHnXtdnB395uXs/qN.ubzvBSJJYtSsmCG2n1ZGFlPPSgVtmekW', '$2a$10$L.UXocZhQtHU/N/AnUCKkuj6zYMmg0oZN3.dVA141t8bukLFmDoWu', TRUE, '2019-05-14 06:49:21', '2019-05-14 06:49:21', '2019-05-14 06:49:21')[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (4.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'user-43@user.com' LIMIT 1[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `activation_digest`, `activated`, `activated_at`, `created_at`, `updated_at`) VALUES ('Camellia Stamm', 'user-43@user.com', '$2a$10$YKeDSYU8Brz09JDvk92ga.F/egEfYa3/TrTJuJVN97w5kNH2b1v2.', '$2a$10$KUhK29CSSkBiaQU.ZhM/0Ojcxs/9JiHAtZ21ouAyFnY7WHbjfL3uO', TRUE, '2019-05-14 06:49:21', '2019-05-14 06:49:21', '2019-05-14 06:49:21')[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (4.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'user-44@user.com' LIMIT 1[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.1ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `activation_digest`, `activated`, `activated_at`, `created_at`, `updated_at`) VALUES ('Jeanine Kunze', 'user-44@user.com', '$2a$10$3dgPJRilCwWXod/n57bZse9OFTfrDMPzqxNIj1qVbj9j0TDcla37O', '$2a$10$DhIRncvU9NucUHvAibjyueoxpxpbupZ.yn9VpmGOwH2SNfW8mHuPO', TRUE, '2019-05-14 06:49:21', '2019-05-14 06:49:21', '2019-05-14 06:49:21')[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (4.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'user-45@user.com' LIMIT 1[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `activation_digest`, `activated`, `activated_at`, `created_at`, `updated_at`) VALUES ('Lucilla Yundt', 'user-45@user.com', '$2a$10$UKEL3tpmHcwV9zI8Rj4DGexjq4SuZcafjxVsA02oapKEXOPMDruVK', '$2a$10$PfcfsuH8VQzKreyyoxZbPugal2104xO682RJlYuWxgVJBDTfdwy26', TRUE, '2019-05-14 06:49:21', '2019-05-14 06:49:21', '2019-05-14 06:49:21')[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (4.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'user-46@user.com' LIMIT 1[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `activation_digest`, `activated`, `activated_at`, `created_at`, `updated_at`) VALUES ('Beata Runte', 'user-46@user.com', '$2a$10$.V4x253tdRgiFrSBQXIE9OUWhiTY2stMRBFbxGdYBf342FuPFes9K', '$2a$10$B5FK/pLHc6FilZGtB0r8ge.cbySJszVLHgFgX8Zxk8X3JXVDgsiYm', TRUE, '2019-05-14 06:49:21', '2019-05-14 06:49:22', '2019-05-14 06:49:22')[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (4.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'user-47@user.com' LIMIT 1[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `activation_digest`, `activated`, `activated_at`, `created_at`, `updated_at`) VALUES ('Shayna Greenholt', 'user-47@user.com', '$2a$10$BeAzHTzRcApGfKJ6aOHwFeY/mAcsKitLwLJUSAvCo2MxhbmKfNrQ6', '$2a$10$O4Yd/LwlODTgof8PV4knDu08BVuakQucHzLfX7h3QMcUinRX4bfw6', TRUE, '2019-05-14 06:49:22', '2019-05-14 06:49:22', '2019-05-14 06:49:22')[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (4.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'user-48@user.com' LIMIT 1[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `activation_digest`, `activated`, `activated_at`, `created_at`, `updated_at`) VALUES ('Felicitas Lynch', 'user-48@user.com', '$2a$10$vq0dKoqhuUiSglzz5TsSOO4MqoPYh/6PfuND58oZnEq3wdfTQ/2Qe', '$2a$10$6P8.62xjj4NNH88SLL3OVu93dfQWwmclQbZ3Ho.bLmeey.j/rFrtm', TRUE, '2019-05-14 06:49:22', '2019-05-14 06:49:22', '2019-05-14 06:49:22')[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (4.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'user-49@user.com' LIMIT 1[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `activation_digest`, `activated`, `activated_at`, `created_at`, `updated_at`) VALUES ('Audry Jast', 'user-49@user.com', '$2a$10$ABfVJiQ4Q.vnto7nE9bXe.x1rFlnlDIOOQlqjjgpq.RgIvXe4boay', '$2a$10$AZtH7O14RVlSjYgMi7mLy.ZyMDOM.JpqmL6ImpUq8fTtCpDssbcRS', TRUE, '2019-05-14 06:49:22', '2019-05-14 06:49:22', '2019-05-14 06:49:22')[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (4.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'user-50@user.com' LIMIT 1[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `activation_digest`, `activated`, `activated_at`, `created_at`, `updated_at`) VALUES ('Roberto Cruickshank', 'user-50@user.com', '$2a$10$GPk0KyweJMYVh49K32PCyuIQj9kbyQhDNjieop0zkt9nTq9KEkxOy', '$2a$10$9IopRA3d0LDcFRhDiWggGexaodqNMe2iND0sUen0tkoqb59baoIxS', TRUE, '2019-05-14 06:49:22', '2019-05-14 06:49:22', '2019-05-14 06:49:22')[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (4.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'user-51@user.com' LIMIT 1[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `activation_digest`, `activated`, `activated_at`, `created_at`, `updated_at`) VALUES ('Walton Kutch', 'user-51@user.com', '$2a$10$/ZvrnwVLcEXE5ddzvMv5peLgCDTOMCwSctNp0FwpTEracJWMNc1vm', '$2a$10$emyfSOfk8PSjeESio3.2POzfWSKtIwsOAPAw0ECr1ZM3fBrhmdN4y', TRUE, '2019-05-14 06:49:22', '2019-05-14 06:49:22', '2019-05-14 06:49:22')[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (4.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'user-52@user.com' LIMIT 1[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `activation_digest`, `activated`, `activated_at`, `created_at`, `updated_at`) VALUES ('Leila Collier', 'user-52@user.com', '$2a$10$ht3JTFb.Tr4yqSQzui7Hi.ZO2MtpXFitmaqBxlSUKP/iR/uIXTPz6', '$2a$10$INniQ90aJw3bMv0Rgw9dOecH64tXwrY9y2kxEf8Hh4iuW0DDvgo/m', TRUE, '2019-05-14 06:49:22', '2019-05-14 06:49:22', '2019-05-14 06:49:22')[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (4.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'user-53@user.com' LIMIT 1[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `activation_digest`, `activated`, `activated_at`, `created_at`, `updated_at`) VALUES ('Suzanna Schneider', 'user-53@user.com', '$2a$10$NHNLiv05/zF9vJqWXegNmenIHSlkiM.9O9fSSR4sxntFjWW2llefu', '$2a$10$eVisthBswdElqd8yW0SVNOqVqDgo8NDx4wE.fTKjlTALzGyF6ML0y', TRUE, '2019-05-14 06:49:22', '2019-05-14 06:49:22', '2019-05-14 06:49:22')[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (4.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'user-54@user.com' LIMIT 1[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.1ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `activation_digest`, `activated`, `activated_at`, `created_at`, `updated_at`) VALUES ('Leontine White', 'user-54@user.com', '$2a$10$6yL49hWhua.LS/bxKE3Gpe/LnE6M2QrHh33jVhnzvTbMytmk7cxFW', '$2a$10$Oh7AJ4YRy5HP396hlBKFGO73eYHllsJ9q2U6J8FJCjSPlJqiUT.4i', TRUE, '2019-05-14 06:49:22', '2019-05-14 06:49:22', '2019-05-14 06:49:22')[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (4.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'user-55@user.com' LIMIT 1[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `activation_digest`, `activated`, `activated_at`, `created_at`, `updated_at`) VALUES ('Jaqueline Daniel', 'user-55@user.com', '$2a$10$baS4zDYI5AfbyYdGIGsnOeK9rYdXC4w2JGwh6gJzuy8hsmR0uWBmq', '$2a$10$gHgczb9Y6VF2gSUd5oAgDeEKb7Q4gbvoi2NzPdHDcErnm4vDc6c4a', TRUE, '2019-05-14 06:49:23', '2019-05-14 06:49:23', '2019-05-14 06:49:23')[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (4.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'user-56@user.com' LIMIT 1[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `activation_digest`, `activated`, `activated_at`, `created_at`, `updated_at`) VALUES ('Devin Keebler', 'user-56@user.com', '$2a$10$4yOcM0/pEb3RfvM/MFm2leZayWMjmM2neswNufP3RRAKY3Cg3rLIS', '$2a$10$Qw1CNbwKXs2TzuYE0NLROOPj2vuPkiOWr61wW1ANKxPLU22PGQ3gC', TRUE, '2019-05-14 06:49:23', '2019-05-14 06:49:23', '2019-05-14 06:49:23')[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (4.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'user-57@user.com' LIMIT 1[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `activation_digest`, `activated`, `activated_at`, `created_at`, `updated_at`) VALUES ('Matha Jast', 'user-57@user.com', '$2a$10$5L8IhYTBkZnV8V3losr6qeRzA/TQnALdg36UXzCMQwoNlGW0xxY4K', '$2a$10$6DM/U0iOdz6I2jIbpamNkuBudEDwGAD8axfyZ6HXZOuSYif2AF8NO', TRUE, '2019-05-14 06:49:23', '2019-05-14 06:49:23', '2019-05-14 06:49:23')[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (4.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'user-58@user.com' LIMIT 1[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `activation_digest`, `activated`, `activated_at`, `created_at`, `updated_at`) VALUES ('Emilia Gibson', 'user-58@user.com', '$2a$10$AecS8M5YNZ5W0lLXOwKjhu99lV7Xo29rRKtaWFwnaxzWhHDHkGTCe', '$2a$10$JB75W/YtdGL.L9hn/QL0AeyKmqV55sGRKYH5.l4tcYM5gSIRVG74C', TRUE, '2019-05-14 06:49:23', '2019-05-14 06:49:23', '2019-05-14 06:49:23')[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (4.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'user-59@user.com' LIMIT 1[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `activation_digest`, `activated`, `activated_at`, `created_at`, `updated_at`) VALUES ('Laurel Howe', 'user-59@user.com', '$2a$10$71usjTTHmcWvHBuAtmXStuAOcRrKXG9WjPLAsF8jU8.Q6MzNlPvMW', '$2a$10$RLC.bSdq7xY6ptrsec9XcudU3Y5WoucptrS8aT32ly/KOD.Ww8NLm', TRUE, '2019-05-14 06:49:23', '2019-05-14 06:49:23', '2019-05-14 06:49:23')[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (4.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'user-60@user.com' LIMIT 1[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `activation_digest`, `activated`, `activated_at`, `created_at`, `updated_at`) VALUES ('Nydia Stark', 'user-60@user.com', '$2a$10$oBfvgyhPDf95vOlNA89VZeT0mXjyHdFM2On5nGVM6gAKzGGBmPPYC', '$2a$10$MBcIVYrARdchDr.czaSiqufyWqJOqw5iYXPwoHrrv8e/YBMcHxnFy', TRUE, '2019-05-14 06:49:23', '2019-05-14 06:49:23', '2019-05-14 06:49:23')[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (4.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'user-61@user.com' LIMIT 1[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `activation_digest`, `activated`, `activated_at`, `created_at`, `updated_at`) VALUES ('Herminia Trantow', 'user-61@user.com', '$2a$10$QEa7e0Kaxks.4YDyTTjtc.310JjSp9JEikJxxl38rpV1gq/1.vGAK', '$2a$10$0KSYvzBFUknyd8FRFPwBuOHRFpmpb1.Hs0Hlego.H8QoARrshpW8a', TRUE, '2019-05-14 06:49:23', '2019-05-14 06:49:23', '2019-05-14 06:49:23')[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (4.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'user-62@user.com' LIMIT 1[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `activation_digest`, `activated`, `activated_at`, `created_at`, `updated_at`) VALUES ('Stephani Jakubowski', 'user-62@user.com', '$2a$10$Qq8XxY.oiB6Z4O.DCozhaOSefEmWkJLHWUBHuu.Agee7if5Anvo2q', '$2a$10$HAsFmULJonaeocJww4aWkeGnI6ebPMwr0r2HSWOaoZ/cfPfWrluxq', TRUE, '2019-05-14 06:49:23', '2019-05-14 06:49:23', '2019-05-14 06:49:23')[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (4.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'user-63@user.com' LIMIT 1[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `activation_digest`, `activated`, `activated_at`, `created_at`, `updated_at`) VALUES ('Jaimie Rosenbaum', 'user-63@user.com', '$2a$10$E9HMrYGnerLb4ZVmjOVMZur/93w77wRUUmgvPzutrhvjg4J/byzZq', '$2a$10$Ry.gck40tINJFSJ84R4Uz.mSb9fbYA9A5AT1VTxuT/7hQfXMyT9/m', TRUE, '2019-05-14 06:49:24', '2019-05-14 06:49:24', '2019-05-14 06:49:24')[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (4.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'user-64@user.com' LIMIT 1[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `activation_digest`, `activated`, `activated_at`, `created_at`, `updated_at`) VALUES ('Carie O\'Reilly', 'user-64@user.com', '$2a$10$Xgys0/E9MoOQTTDj7xf84eGaxZw35APmrVtm9VAhzqUFDkFJTIKjy', '$2a$10$Fe17QXLd0M59a27KLzculeqMtypDEEwAqh6beP/ELdFUoNIBSljjC', TRUE, '2019-05-14 06:49:24', '2019-05-14 06:49:24', '2019-05-14 06:49:24')[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (4.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'user-65@user.com' LIMIT 1[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `activation_digest`, `activated`, `activated_at`, `created_at`, `updated_at`) VALUES ('Mae Wolff', 'user-65@user.com', '$2a$10$VGTUb6JUL4rtKOgin1pP7eCS20BRnDC5D3KDNDGZ0YqY.E5LwgVmm', '$2a$10$Mm6Cw9K3KoOhvCPdirqEg.HQw1h8sbobRNAcP8140WBKhzDNjOUU2', TRUE, '2019-05-14 06:49:24', '2019-05-14 06:49:24', '2019-05-14 06:49:24')[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (4.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'user-66@user.com' LIMIT 1[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `activation_digest`, `activated`, `activated_at`, `created_at`, `updated_at`) VALUES ('Jessie Huels', 'user-66@user.com', '$2a$10$7MjBAiKmXGuoAQGH8KMoUeLHcHea4PwOzdcuNd.hJNEK3t/R89LyO', '$2a$10$vxYNdHkyHFqTvt8uo4s0tOfktet7ktmmztCe5txy2zZzCO7L/l7f.', TRUE, '2019-05-14 06:49:24', '2019-05-14 06:49:24', '2019-05-14 06:49:24')[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (4.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'user-67@user.com' LIMIT 1[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `activation_digest`, `activated`, `activated_at`, `created_at`, `updated_at`) VALUES ('Mozell Bayer', 'user-67@user.com', '$2a$10$UTrAl7/4.1ZSytyRT64/d.3cNNBwnwh/Wa7AR3Y3MkcteN027fUyG', '$2a$10$2L61xcbKwdmj6w8nHwx07uozN.xeke5JZPbRmYk7lQjYC76ykk0d.', TRUE, '2019-05-14 06:49:24', '2019-05-14 06:49:24', '2019-05-14 06:49:24')[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (4.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'user-68@user.com' LIMIT 1[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `activation_digest`, `activated`, `activated_at`, `created_at`, `updated_at`) VALUES ('Georgeanna Herman', 'user-68@user.com', '$2a$10$pCYehLBtuASFx6aVw4PhA.WTNhWdBgK0XMZ3plZfHvehDio9vzese', '$2a$10$8zZw4c/Pk2pWCGx/UMNMMO03ztGJsdaa/vQL5SyRMCtXZsSd53JRK', TRUE, '2019-05-14 06:49:24', '2019-05-14 06:49:24', '2019-05-14 06:49:24')[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (4.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'user-69@user.com' LIMIT 1[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `activation_digest`, `activated`, `activated_at`, `created_at`, `updated_at`) VALUES ('Clemmie Carter', 'user-69@user.com', '$2a$10$0iglPubhkzFDYtgHm09Aw.SVQVsixHhaUXcX1OZQ.MQ10mHpEvouu', '$2a$10$xxMM0bu2mUY/.blu/TEdhexJCugnEbz8oxqkhvBAH8gQfoq3OCQpy', TRUE, '2019-05-14 06:49:24', '2019-05-14 06:49:24', '2019-05-14 06:49:24')[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (4.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'user-70@user.com' LIMIT 1[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `activation_digest`, `activated`, `activated_at`, `created_at`, `updated_at`) VALUES ('Penni Mitchell', 'user-70@user.com', '$2a$10$khu0xrUwC7F5Gju3IrkHdenKnDnFL7QaUjpkC9jP/aTHVzPYuXqJO', '$2a$10$ODPmMKgzJWEFyr8ORj62aeZw45kDIH.5xwcsym9sdDdGRx27b/MIq', TRUE, '2019-05-14 06:49:24', '2019-05-14 06:49:24', '2019-05-14 06:49:24')[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (4.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'user-71@user.com' LIMIT 1[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `activation_digest`, `activated`, `activated_at`, `created_at`, `updated_at`) VALUES ('Ellen Moore', 'user-71@user.com', '$2a$10$q1Gv2iQ2NWeZuspy0erWAOV0GNzm1hZJxej0ykiYaZOYqMFYosRTa', '$2a$10$bfbvsGlM1xwRuz7yn3sog.0/.Yr/Ycj4VEzA07TgzAYwGx5/w/vzO', TRUE, '2019-05-14 06:49:24', '2019-05-14 06:49:25', '2019-05-14 06:49:25')[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (4.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'user-72@user.com' LIMIT 1[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `activation_digest`, `activated`, `activated_at`, `created_at`, `updated_at`) VALUES ('Elvis Cassin', 'user-72@user.com', '$2a$10$wb.hXg/zMnIGBN8m/VxSDOGc32afx5aslXoTTVRAfcFUrdG5BqviO', '$2a$10$E6JINrPQ378I6e5368/thuqSURNefTl1P3KAFl5CQ/miV2cPC4Z2S', TRUE, '2019-05-14 06:49:25', '2019-05-14 06:49:25', '2019-05-14 06:49:25')[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (4.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'user-73@user.com' LIMIT 1[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `activation_digest`, `activated`, `activated_at`, `created_at`, `updated_at`) VALUES ('Natisha Volkman', 'user-73@user.com', '$2a$10$ZGrxjIJDdd.gBezIXsXp5.A87QGMUEM8Hk5zLY0AaSLVEYPJ3uiVK', '$2a$10$7mFUAAFl.IO2iSMnYhauQeVG94Iz84UCFnLbwCEJWPzik5Uf85A8a', TRUE, '2019-05-14 06:49:25', '2019-05-14 06:49:25', '2019-05-14 06:49:25')[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (4.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'user-74@user.com' LIMIT 1[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `activation_digest`, `activated`, `activated_at`, `created_at`, `updated_at`) VALUES ('Emmaline Flatley', 'user-74@user.com', '$2a$10$QvPYPyAPN4wv57WiRa6bJuKEkp6jzfU.Fkg1HuCX9j4t590X4fcju', '$2a$10$H6f4.Oo6T56Akv98tAtKUegT92AunDSPL80IJOjwYXJGHZsYsuG0K', TRUE, '2019-05-14 06:49:25', '2019-05-14 06:49:25', '2019-05-14 06:49:25')[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (4.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'user-75@user.com' LIMIT 1[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `activation_digest`, `activated`, `activated_at`, `created_at`, `updated_at`) VALUES ('Gavin Douglas', 'user-75@user.com', '$2a$10$ni4pNsPZJ.dmQZ5AxhdQXe.WdZBV.yYFofM3XZCKf6wHSSoP2EfyC', '$2a$10$pcY1YsEWc1BMP.jrOCc1LulCojCQcj6aFCDHaCsTrlw5wr.C1liuK', TRUE, '2019-05-14 06:49:25', '2019-05-14 06:49:25', '2019-05-14 06:49:25')[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (4.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'user-76@user.com' LIMIT 1[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `activation_digest`, `activated`, `activated_at`, `created_at`, `updated_at`) VALUES ('Jere Quigley', 'user-76@user.com', '$2a$10$lIW1gxAmrxB67b.Mqx7IzeLmGvk/RaAsBuVJT8J4Iz2mZaVaHcIOC', '$2a$10$u9unskUSFx/Z1Z1BHIv2nez1pLCT2wDpXwSxhhmBvT/Qcs8Z1Xc0m', TRUE, '2019-05-14 06:49:25', '2019-05-14 06:49:25', '2019-05-14 06:49:25')[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (4.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'user-77@user.com' LIMIT 1[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `activation_digest`, `activated`, `activated_at`, `created_at`, `updated_at`) VALUES ('Kisha Connelly', 'user-77@user.com', '$2a$10$4tBeDxkn6wPKfjlw9.Pdc.4J9GCiuR2T52HDni.c3i7GzXbdu9cMu', '$2a$10$K3fM9mQIkWAMZCqjUuQqvuiO00vPWIZHuUJjIcabLaEZPuiUFoo1G', TRUE, '2019-05-14 06:49:25', '2019-05-14 06:49:25', '2019-05-14 06:49:25')[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (4.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'user-78@user.com' LIMIT 1[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `activation_digest`, `activated`, `activated_at`, `created_at`, `updated_at`) VALUES ('Leonida O\'Connell', 'user-78@user.com', '$2a$10$mqI/WsVBjUoe.xYk.wRe3ugDblrVhJVs6nKy5WZJtaW8wzvZILYbC', '$2a$10$wr1niybR2kMexGa9eNlRYOKKh5IRHi.bLyyDybjiysJxCUhWY18Ii', TRUE, '2019-05-14 06:49:25', '2019-05-14 06:49:25', '2019-05-14 06:49:25')[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (4.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'user-79@user.com' LIMIT 1[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `activation_digest`, `activated`, `activated_at`, `created_at`, `updated_at`) VALUES ('Norah Zulauf', 'user-79@user.com', '$2a$10$ygqOAp6MzyAkpCKucG6wcOMVE38sXjhariB1rh1FChMZlvsqaz/4G', '$2a$10$l3BuPjlVlVBRIz.8TV0naOCMnES540nwC32I2YF0QbvhbYfpc3LfC', TRUE, '2019-05-14 06:49:25', '2019-05-14 06:49:25', '2019-05-14 06:49:25')[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (4.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'user-80@user.com' LIMIT 1[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `activation_digest`, `activated`, `activated_at`, `created_at`, `updated_at`) VALUES ('Brittany Yundt', 'user-80@user.com', '$2a$10$bcfmExyF.SfsPttSdbfZ2u0tgThaoeIZk0zVE03GmwXP0pC.EQHu6', '$2a$10$5pDi1BU5UXZxpjAP02kqKehW.AhKgBhw5fJSc9PnjDQJ9mmoSndBW', TRUE, '2019-05-14 06:49:26', '2019-05-14 06:49:26', '2019-05-14 06:49:26')[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (4.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'user-81@user.com' LIMIT 1[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `activation_digest`, `activated`, `activated_at`, `created_at`, `updated_at`) VALUES ('Melva Bode', 'user-81@user.com', '$2a$10$i6fgRcGEXT.FSH9jae3VKe6nlNkwknfwRvMoVSKhRH27D0GrK8mPu', '$2a$10$p42UhqjkLf/LrTfYqnltre0lh7xTbvoo7MrF7SBBFHQMCICZu0TaK', TRUE, '2019-05-14 06:49:26', '2019-05-14 06:49:26', '2019-05-14 06:49:26')[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (4.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'user-82@user.com' LIMIT 1[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `activation_digest`, `activated`, `activated_at`, `created_at`, `updated_at`) VALUES ('Nelida Weimann', 'user-82@user.com', '$2a$10$OWoBcWRgMNPdh0kCBwHQn.84lJmcjEFiDjpfqCIJOdruRMboAqhWa', '$2a$10$izGJtjMd3G3svMbUg8u8jOeMJBrWuQgUedZ9Xkq6.ixjqJa80nLgW', TRUE, '2019-05-14 06:49:26', '2019-05-14 06:49:26', '2019-05-14 06:49:26')[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (4.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'user-83@user.com' LIMIT 1[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `activation_digest`, `activated`, `activated_at`, `created_at`, `updated_at`) VALUES ('Lorita Metz', 'user-83@user.com', '$2a$10$QXx52la5hTpV3vkZkeS.ZOQFZeg1R.J1mluwgfYzYokiqpZxqDOOK', '$2a$10$uCOswjvE3hAMhCuMmK4XFu8/6vPAW9DVgqo7pNRdoClzSqIKuCHZq', TRUE, '2019-05-14 06:49:26', '2019-05-14 06:49:26', '2019-05-14 06:49:26')[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (4.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'user-84@user.com' LIMIT 1[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `activation_digest`, `activated`, `activated_at`, `created_at`, `updated_at`) VALUES ('Raelene Watsica', 'user-84@user.com', '$2a$10$8ogKedAHCKAFZeplbVO5M.XRWW/d8a4eGaxeFyG/RjIztTyRG2txO', '$2a$10$./2s8qGTI/ThRnGnk1SPnuch19sY3H4no4wTdeH1glC1epDuOc2VO', TRUE, '2019-05-14 06:49:26', '2019-05-14 06:49:26', '2019-05-14 06:49:26')[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (4.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'user-85@user.com' LIMIT 1[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `activation_digest`, `activated`, `activated_at`, `created_at`, `updated_at`) VALUES ('Damien Altenwerth', 'user-85@user.com', '$2a$10$6pJTBrfBgl2TxGnuv.6dDuopKm1GlW5avPJunNfkyDTQfmf3Otuym', '$2a$10$1y5dToucO2Qiu88Ic3me9uUzn86J4mC4wH.roD8G.DJndi4RJKNz2', TRUE, '2019-05-14 06:49:26', '2019-05-14 06:49:26', '2019-05-14 06:49:26')[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (4.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'user-86@user.com' LIMIT 1[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `activation_digest`, `activated`, `activated_at`, `created_at`, `updated_at`) VALUES ('Manie Ankunding', 'user-86@user.com', '$2a$10$pwqse0.uDx3kbWrM6rfPx.Pjk/kXghADMx5yqPZzvgYI2pS/L/VqK', '$2a$10$UBOWtffbLcfFEQnDEEDuUuceBV4dUUERI8DTFfn9jw.oR4BR9JimW', TRUE, '2019-05-14 06:49:26', '2019-05-14 06:49:26', '2019-05-14 06:49:26')[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (4.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'user-87@user.com' LIMIT 1[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `activation_digest`, `activated`, `activated_at`, `created_at`, `updated_at`) VALUES ('Cari Hegmann', 'user-87@user.com', '$2a$10$cXOkcTvrMxlV7x4.Ohm8zOYyBEiEz2kwDtR8wA/dZPNb3vRahdVFS', '$2a$10$R6GqyYYSU6avrp4ssv6UquW5IhDSbqNEOks9QAS0gTWQPt4jE3ctC', TRUE, '2019-05-14 06:49:26', '2019-05-14 06:49:26', '2019-05-14 06:49:26')[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (4.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'user-88@user.com' LIMIT 1[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `activation_digest`, `activated`, `activated_at`, `created_at`, `updated_at`) VALUES ('Lewis Kutch', 'user-88@user.com', '$2a$10$IyTUj18dmxpxDUuqRKNIE.ouodkWYms674Iq2eyciMZpSUR.iZJR2', '$2a$10$9FkpRgPZcbzHuSJpUhniS.ynJ5eO4S15Vz2e6xlIqeKCejFhUYZeK', TRUE, '2019-05-14 06:49:27', '2019-05-14 06:49:27', '2019-05-14 06:49:27')[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (4.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'user-89@user.com' LIMIT 1[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `activation_digest`, `activated`, `activated_at`, `created_at`, `updated_at`) VALUES ('Jeanette Runolfsdottir', 'user-89@user.com', '$2a$10$cS8HvxXZNO6aTZ1tAKeP1.no5/QAO2hycLXW1LZynRN0c.wf.iiKO', '$2a$10$ihDaNJTVXE42fGmp1xlfget5Tsf.BRdXksY8ARf7QClxiHNOMwpqm', TRUE, '2019-05-14 06:49:27', '2019-05-14 06:49:27', '2019-05-14 06:49:27')[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (4.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'user-90@user.com' LIMIT 1[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `activation_digest`, `activated`, `activated_at`, `created_at`, `updated_at`) VALUES ('Lesha Rogahn', 'user-90@user.com', '$2a$10$WpZM8kwOlNmuMVRoH6lKOuu4gGDpFmTMcJH232SSiewe6rWOJIMde', '$2a$10$ipC7zrStflJ1JOKesSz1pec0TXBYDH61.hPGiNnmz4vkfVfPtKiBG', TRUE, '2019-05-14 06:49:27', '2019-05-14 06:49:27', '2019-05-14 06:49:27')[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (4.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'user-91@user.com' LIMIT 1[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `activation_digest`, `activated`, `activated_at`, `created_at`, `updated_at`) VALUES ('Sharyl Crist', 'user-91@user.com', '$2a$10$Rq7VfgL1zr.iQwsjTNIfWeBtJYIZhF6sN809gSKqCHBsfIlgbIG8m', '$2a$10$BD79iADfhW5H6599o4MOFO.bKxFK0YMHwmoYDotlv.893wAktVUCC', TRUE, '2019-05-14 06:49:27', '2019-05-14 06:49:27', '2019-05-14 06:49:27')[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (4.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'user-92@user.com' LIMIT 1[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `activation_digest`, `activated`, `activated_at`, `created_at`, `updated_at`) VALUES ('Latricia Rogahn', 'user-92@user.com', '$2a$10$zP8i3egPuuTk9mS78KrhJeRbt/LxsN.9l1J/CSTQKCQl5b5IKZmHm', '$2a$10$2lbI8WBCQvHcesc65JH93OmoAWpgwUpWddFD30DGvbFQTy.IFszfi', TRUE, '2019-05-14 06:49:27', '2019-05-14 06:49:27', '2019-05-14 06:49:27')[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (4.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'user-93@user.com' LIMIT 1[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `activation_digest`, `activated`, `activated_at`, `created_at`, `updated_at`) VALUES ('Destiny Christiansen', 'user-93@user.com', '$2a$10$owmamWoCg0gAjbVXsxtwxuMfS2KHt2q8eEVxxIrJze3krHcV8Wa5C', '$2a$10$Q.XQTWXKennnX3zHZuuO6OCLy2w0oQU79HEyIE0vGr9hSCh8S7B7u', TRUE, '2019-05-14 06:49:27', '2019-05-14 06:49:27', '2019-05-14 06:49:27')[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (4.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'user-94@user.com' LIMIT 1[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `activation_digest`, `activated`, `activated_at`, `created_at`, `updated_at`) VALUES ('Kira Daniel', 'user-94@user.com', '$2a$10$YLFavuY802IMEF4eqUFi.uMtJ/t7Lk3q7QBL3qQWKJ/fMxUZWVM86', '$2a$10$50fd63hkSLt9MQJjjAARoOfLavPz7BwO2NtF3BdbQKC804eJeZn8u', TRUE, '2019-05-14 06:49:27', '2019-05-14 06:49:27', '2019-05-14 06:49:27')[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (4.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'user-95@user.com' LIMIT 1[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `activation_digest`, `activated`, `activated_at`, `created_at`, `updated_at`) VALUES ('Loise Kautzer', 'user-95@user.com', '$2a$10$1iAVtKvcXZChSWfHTyLZQua47Rx7ET.M4L7JtlHabh4hUb728xQne', '$2a$10$i/e3MS/sH68D4Z/xtKx3peC02nJ3QWmmfavYbHnDRPlOjWXP7/Hb6', TRUE, '2019-05-14 06:49:27', '2019-05-14 06:49:27', '2019-05-14 06:49:27')[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (4.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'user-96@user.com' LIMIT 1[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `activation_digest`, `activated`, `activated_at`, `created_at`, `updated_at`) VALUES ('Heidi Beahan', 'user-96@user.com', '$2a$10$7GNpHyaiKUC95r1qBrzV0e.1P/Efpo/6fDphgODHPY87hhPW.Tcgm', '$2a$10$a.5.REUMbandy3prEbIJDueJ0xuSiqSL4HazM1virMIKX0pQrZoDy', TRUE, '2019-05-14 06:49:27', '2019-05-14 06:49:28', '2019-05-14 06:49:28')[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (4.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'user-97@user.com' LIMIT 1[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `activation_digest`, `activated`, `activated_at`, `created_at`, `updated_at`) VALUES ('Lela Kilback', 'user-97@user.com', '$2a$10$Og8TTdPNn4fqWKUYxPGgPukn5J/Z.8.rl8v/sRuBZzKgCJ7sprkE6', '$2a$10$wZm/plCrgcyw5lKPYqpU0.KswpGJc44iNrb8H1oVzR.okrsohxfM2', TRUE, '2019-05-14 06:49:28', '2019-05-14 06:49:28', '2019-05-14 06:49:28')[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (4.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'user-98@user.com' LIMIT 1[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `activation_digest`, `activated`, `activated_at`, `created_at`, `updated_at`) VALUES ('Shiela Grimes', 'user-98@user.com', '$2a$10$CRPgKUDUQKzZ0l4HDJZozOvhTu4e5o0afjwNjAD/8tAhT4Sd2dy26', '$2a$10$yP0i0l4z/c5KKN.3ZL5ljOY0JjX2LEcGn8iwaft7RoMSUQ9h.K65.', TRUE, '2019-05-14 06:49:28', '2019-05-14 06:49:28', '2019-05-14 06:49:28')[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (4.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'user-99@user.com' LIMIT 1[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `activation_digest`, `activated`, `activated_at`, `created_at`, `updated_at`) VALUES ('Elissa Hartmann', 'user-99@user.com', '$2a$10$gh6VYNZ5mUGCW3.8jV3oj.5oED3buf304SblVyc2fCG9d.DjLEvhO', '$2a$10$X6o48rB0N70BU7sYGJQZEuOA3NLvUqA4A.Mcl5f5iFRR/YvKoFvZa', TRUE, '2019-05-14 06:49:28', '2019-05-14 06:49:28', '2019-05-14 06:49:28')[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (4.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+Started GET "/manager/rooms" for ::1 at 2019-05-14 14:08:42 +0700
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/quangtu/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by Manager::RoomsController#index as HTML
+  Rendering manager/rooms/index.html.erb within layouts/manager/application
+  Rendered shared/_search.html.erb (0.5ms)
+  [1m[36mRoom Load (0.3ms)[0m  [1m[34mSELECT  `rooms`.* FROM `rooms` LIMIT 25 OFFSET 0[0m
+  ↳ app/views/manager/rooms/index.html.erb:25
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered manager/rooms/index.html.erb within layouts/manager/application (4.6ms)
+  Rendered layouts/manager/_meta.html.erb (0.4ms)
+  Rendered layouts/manager/_style.html.erb (11.3ms)
+  Rendered layouts/manager/_nav.html.erb (2.3ms)
+  Rendered layouts/manager/_sidebar.html.erb (0.7ms)
+  Rendered layouts/manager/_footer.html.erb (0.3ms)
+  Rendered layouts/manager/_js.html.erb (27.5ms)
+Completed 200 OK in 59ms (Views: 50.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/manager/rooms/new" for ::1 at 2019-05-14 14:10:45 +0700
+Processing by Manager::RoomsController#new as HTML
+  Rendering manager/rooms/new.html.erb within layouts/manager/application
+  Rendered shared/_error_messages.html.erb (0.3ms)
+  Rendered manager/rooms/_form.html.erb (8.3ms)
+  Rendered manager/rooms/new.html.erb within layouts/manager/application (9.0ms)
+  Rendered layouts/manager/_meta.html.erb (0.2ms)
+  Rendered layouts/manager/_style.html.erb (10.3ms)
+  Rendered layouts/manager/_nav.html.erb (2.1ms)
+  Rendered layouts/manager/_sidebar.html.erb (0.6ms)
+  Rendered layouts/manager/_footer.html.erb (0.2ms)
+  Rendered layouts/manager/_js.html.erb (42.7ms)
+Completed 200 OK in 78ms (Views: 68.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/manager/rooms/new" for ::1 at 2019-05-14 14:11:32 +0700
+Processing by Manager::RoomsController#new as HTML
+  Rendering manager/rooms/new.html.erb within layouts/manager/application
+  Rendered shared/_error_messages.html.erb (0.4ms)
+  Rendered manager/rooms/_form.html.erb (5.4ms)
+  Rendered manager/rooms/new.html.erb within layouts/manager/application (6.2ms)
+  Rendered layouts/manager/_meta.html.erb (0.4ms)
+  Rendered layouts/manager/_style.html.erb (11.4ms)
+  Rendered layouts/manager/_nav.html.erb (4.1ms)
+  Rendered layouts/manager/_sidebar.html.erb (0.9ms)
+  Rendered layouts/manager/_footer.html.erb (0.3ms)
+  Rendered layouts/manager/_js.html.erb (29.6ms)
+Completed 200 OK in 59ms (Views: 57.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/manager/rooms/new" for ::1 at 2019-05-14 14:12:03 +0700
+Processing by Manager::RoomsController#new as HTML
+  Rendering manager/rooms/new.html.erb within layouts/manager/application
+  Rendered shared/_error_messages.html.erb (0.4ms)
+  Rendered manager/rooms/_form.html.erb (3.8ms)
+  Rendered manager/rooms/new.html.erb within layouts/manager/application (4.8ms)
+  Rendered layouts/manager/_meta.html.erb (0.3ms)
+  Rendered layouts/manager/_style.html.erb (11.8ms)
+  Rendered layouts/manager/_nav.html.erb (2.8ms)
+  Rendered layouts/manager/_sidebar.html.erb (0.9ms)
+  Rendered layouts/manager/_footer.html.erb (0.3ms)
+  Rendered layouts/manager/_js.html.erb (24.8ms)
+Completed 200 OK in 51ms (Views: 49.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/manager/rooms" for ::1 at 2019-05-14 14:12:27 +0700
+Processing by Manager::RoomsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7/WuMleW3eAAkam/+n+r/NgZ2VCfnMJUnujFVVF/jTsay3GoZO9o/Gmg/YlN3cfoDi/xHcv2Qz5OJAlqNc0MRw==", "room"=>{"name"=>"VIP2", "location_id"=>"1", "bed_detail_id"=>"1", "pictures"=>[#<ActionDispatch::Http::UploadedFile:0x00007f5c0c229538 @tempfile=#<Tempfile:/tmp/RackMultipart20190514-30359-154tsvj.png>, @original_filename="Screenshot from 2019-04-26 13-04-14.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"room[pictures][]\"; filename=\"Screenshot from 2019-04-26 13-04-14.png\"\r\nContent-Type: image/png\r\n">, #<ActionDispatch::Http::UploadedFile:0x00007f5c0c2294e8 @tempfile=#<Tempfile:/tmp/RackMultipart20190514-30359-i60hzc.png>, @original_filename="Screenshot from 2019-04-30 12-20-07.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"room[pictures][]\"; filename=\"Screenshot from 2019-04-30 12-20-07.png\"\r\nContent-Type: image/png\r\n">, #<ActionDispatch::Http::UploadedFile:0x00007f5c0c229470 @tempfile=#<Tempfile:/tmp/RackMultipart20190514-30359-12yjjik.png>, @original_filename="Screenshot from 2019-04-30 13-29-04.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"room[pictures][]\"; filename=\"Screenshot from 2019-04-30 13-29-04.png\"\r\nContent-Type: image/png\r\n">], "occupancy_limit"=>"1", "living_room"=>"1", "bed_room"=>"1", "bath_room"=>"1", "number_of_bed"=>"10", "quantity"=>"1", "price"=>"150000"}, "button"=>""}
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.8ms)
+
+
+  
+ActiveRecord::StatementInvalid (Mysql2::Error: Table 'mini-booking.active_storage_attachments' doesn't exist: SHOW FULL FIELDS FROM `active_storage_attachments`):
+  
+app/controllers/manager/rooms_controller.rb:19:in `create'
+Started POST "/manager/rooms" for ::1 at 2019-05-14 14:15:32 +0700
+Processing by Manager::RoomsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7/WuMleW3eAAkam/+n+r/NgZ2VCfnMJUnujFVVF/jTsay3GoZO9o/Gmg/YlN3cfoDi/xHcv2Qz5OJAlqNc0MRw==", "room"=>{"name"=>"VIP2", "location_id"=>"1", "bed_detail_id"=>"1", "pictures"=>[#<ActionDispatch::Http::UploadedFile:0x00007f5c29d03a18 @tempfile=#<Tempfile:/tmp/RackMultipart20190514-30359-1bde6cu.png>, @original_filename="Screenshot from 2019-04-26 13-04-14.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"room[pictures][]\"; filename=\"Screenshot from 2019-04-26 13-04-14.png\"\r\nContent-Type: image/png\r\n">, #<ActionDispatch::Http::UploadedFile:0x00007f5c29d039c8 @tempfile=#<Tempfile:/tmp/RackMultipart20190514-30359-1j89v5.png>, @original_filename="Screenshot from 2019-04-30 12-20-07.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"room[pictures][]\"; filename=\"Screenshot from 2019-04-30 12-20-07.png\"\r\nContent-Type: image/png\r\n">, #<ActionDispatch::Http::UploadedFile:0x00007f5c29d03978 @tempfile=#<Tempfile:/tmp/RackMultipart20190514-30359-1mpkcea.png>, @original_filename="Screenshot from 2019-04-30 13-29-04.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"room[pictures][]\"; filename=\"Screenshot from 2019-04-30 13-29-04.png\"\r\nContent-Type: image/png\r\n">], "occupancy_limit"=>"1", "living_room"=>"1", "bed_room"=>"1", "bath_room"=>"1", "number_of_bed"=>"10", "quantity"=>"1", "price"=>"150000"}, "button"=>""}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.7ms)
+
+
+  
+ActiveRecord::StatementInvalid (Mysql2::Error: Table 'mini-booking.active_storage_attachments' doesn't exist: SHOW FULL FIELDS FROM `active_storage_attachments`):
+  
+app/controllers/manager/rooms_controller.rb:19:in `create'
+Started POST "/manager/rooms" for ::1 at 2019-05-14 14:28:21 +0700
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/quangtu/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by Manager::RoomsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7/WuMleW3eAAkam/+n+r/NgZ2VCfnMJUnujFVVF/jTsay3GoZO9o/Gmg/YlN3cfoDi/xHcv2Qz5OJAlqNc0MRw==", "room"=>{"name"=>"VIP2", "location_id"=>"1", "bed_detail_id"=>"1", "pictures"=>[#<ActionDispatch::Http::UploadedFile:0x00007f5c2cbddde8 @tempfile=#<Tempfile:/tmp/RackMultipart20190514-30359-yf2tc1.png>, @original_filename="Screenshot from 2019-04-26 13-04-14.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"room[pictures][]\"; filename=\"Screenshot from 2019-04-26 13-04-14.png\"\r\nContent-Type: image/png\r\n">, #<ActionDispatch::Http::UploadedFile:0x00007f5c2cbddd48 @tempfile=#<Tempfile:/tmp/RackMultipart20190514-30359-ojtuq9.png>, @original_filename="Screenshot from 2019-04-30 12-20-07.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"room[pictures][]\"; filename=\"Screenshot from 2019-04-30 12-20-07.png\"\r\nContent-Type: image/png\r\n">, #<ActionDispatch::Http::UploadedFile:0x00007f5c2cbdd820 @tempfile=#<Tempfile:/tmp/RackMultipart20190514-30359-38iu94.png>, @original_filename="Screenshot from 2019-04-30 13-29-04.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"room[pictures][]\"; filename=\"Screenshot from 2019-04-30 13-29-04.png\"\r\nContent-Type: image/png\r\n">], "occupancy_limit"=>"1", "living_room"=>"1", "bed_room"=>"1", "bath_room"=>"1", "number_of_bed"=>"10", "quantity"=>"1", "price"=>"150000"}, "button"=>""}
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant Room::PictureUploader):
+  
+app/models/room.rb:12:in `<class:Room>'
+app/models/room.rb:1:in `<main>'
+app/controllers/manager/rooms_controller.rb:19:in `create'
+Started POST "/manager/rooms" for ::1 at 2019-05-14 14:31:18 +0700
+Processing by Manager::RoomsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7/WuMleW3eAAkam/+n+r/NgZ2VCfnMJUnujFVVF/jTsay3GoZO9o/Gmg/YlN3cfoDi/xHcv2Qz5OJAlqNc0MRw==", "room"=>{"name"=>"VIP2", "location_id"=>"1", "bed_detail_id"=>"1", "pictures"=>[#<ActionDispatch::Http::UploadedFile:0x00007f5c2ce26938 @tempfile=#<Tempfile:/tmp/RackMultipart20190514-30359-dvmgbf.png>, @original_filename="Screenshot from 2019-04-26 13-04-14.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"room[pictures][]\"; filename=\"Screenshot from 2019-04-26 13-04-14.png\"\r\nContent-Type: image/png\r\n">, #<ActionDispatch::Http::UploadedFile:0x00007f5c2ce26870 @tempfile=#<Tempfile:/tmp/RackMultipart20190514-30359-4qo9d8.png>, @original_filename="Screenshot from 2019-04-30 12-20-07.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"room[pictures][]\"; filename=\"Screenshot from 2019-04-30 12-20-07.png\"\r\nContent-Type: image/png\r\n">, #<ActionDispatch::Http::UploadedFile:0x00007f5c2ce26820 @tempfile=#<Tempfile:/tmp/RackMultipart20190514-30359-1mr5jb7.png>, @original_filename="Screenshot from 2019-04-30 13-29-04.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"room[pictures][]\"; filename=\"Screenshot from 2019-04-30 13-29-04.png\"\r\nContent-Type: image/png\r\n">], "occupancy_limit"=>"1", "living_room"=>"1", "bed_room"=>"1", "bath_room"=>"1", "number_of_bed"=>"10", "quantity"=>"1", "price"=>"150000"}, "button"=>""}
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant Room::PictureUploader):
+  
+app/models/room.rb:12:in `<class:Room>'
+app/models/room.rb:1:in `<main>'
+app/controllers/manager/rooms_controller.rb:19:in `create'
+Started GET "/manager/rooms" for ::1 at 2019-05-14 14:31:21 +0700
+Processing by Manager::RoomsController#index as HTML
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant Room::PictureUploader):
+  
+app/models/room.rb:12:in `<class:Room>'
+app/models/room.rb:1:in `<main>'
+app/controllers/manager/rooms_controller.rb:5:in `index'
+Started POST "/manager/rooms" for ::1 at 2019-05-14 14:31:30 +0700
+Processing by Manager::RoomsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7/WuMleW3eAAkam/+n+r/NgZ2VCfnMJUnujFVVF/jTsay3GoZO9o/Gmg/YlN3cfoDi/xHcv2Qz5OJAlqNc0MRw==", "room"=>{"name"=>"VIP2", "location_id"=>"1", "bed_detail_id"=>"1", "pictures"=>[#<ActionDispatch::Http::UploadedFile:0x00007f5c2bc81228 @tempfile=#<Tempfile:/tmp/RackMultipart20190514-30359-1keluzt.png>, @original_filename="Screenshot from 2019-04-26 13-04-14.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"room[pictures][]\"; filename=\"Screenshot from 2019-04-26 13-04-14.png\"\r\nContent-Type: image/png\r\n">, #<ActionDispatch::Http::UploadedFile:0x00007f5c2bc811d8 @tempfile=#<Tempfile:/tmp/RackMultipart20190514-30359-qqei1e.png>, @original_filename="Screenshot from 2019-04-30 12-20-07.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"room[pictures][]\"; filename=\"Screenshot from 2019-04-30 12-20-07.png\"\r\nContent-Type: image/png\r\n">, #<ActionDispatch::Http::UploadedFile:0x00007f5c2bc81188 @tempfile=#<Tempfile:/tmp/RackMultipart20190514-30359-86vu0q.png>, @original_filename="Screenshot from 2019-04-30 13-29-04.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"room[pictures][]\"; filename=\"Screenshot from 2019-04-30 13-29-04.png\"\r\nContent-Type: image/png\r\n">], "occupancy_limit"=>"1", "living_room"=>"1", "bed_room"=>"1", "bath_room"=>"1", "number_of_bed"=>"10", "quantity"=>"1", "price"=>"150000"}, "button"=>""}
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant Room::PictureUploader):
+  
+app/models/room.rb:12:in `<class:Room>'
+app/models/room.rb:1:in `<main>'
+app/controllers/manager/rooms_controller.rb:19:in `create'
+Started GET "/manager" for ::1 at 2019-05-14 14:31:50 +0700
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/quangtu/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/quangtu/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by Manager::StaticPagesController#home as HTML
+  Rendering manager/static_pages/home.html.erb within layouts/manager/application
+  Rendered manager/static_pages/home.html.erb within layouts/manager/application (0.4ms)
+  Rendered layouts/manager/_meta.html.erb (0.3ms)
+  Rendered layouts/manager/_style.html.erb (883.8ms)
+  Rendered layouts/manager/_nav.html.erb (16.4ms)
+  Rendered layouts/manager/_sidebar.html.erb (0.9ms)
+  Rendered layouts/manager/_footer.html.erb (0.3ms)
+  Rendered layouts/manager/_js.html.erb (54.7ms)
+Completed 200 OK in 967ms (Views: 960.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/manager/rooms" for ::1 at 2019-05-14 14:31:53 +0700
+Processing by Manager::RoomsController#index as HTML
+  Rendering manager/rooms/index.html.erb within layouts/manager/application
+  Rendered shared/_search.html.erb (0.5ms)
+  [1m[36mRoom Load (0.3ms)[0m  [1m[34mSELECT  `rooms`.* FROM `rooms` LIMIT 25 OFFSET 0[0m
+  ↳ app/views/manager/rooms/index.html.erb:25
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered manager/rooms/index.html.erb within layouts/manager/application (4.6ms)
+  Rendered layouts/manager/_meta.html.erb (0.3ms)
+  Rendered layouts/manager/_style.html.erb (19.2ms)
+  Rendered layouts/manager/_nav.html.erb (2.3ms)
+  Rendered layouts/manager/_sidebar.html.erb (0.6ms)
+  Rendered layouts/manager/_footer.html.erb (0.2ms)
+  Rendered layouts/manager/_js.html.erb (39.4ms)
+Completed 200 OK in 78ms (Views: 69.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/manager/rooms/new" for ::1 at 2019-05-14 14:31:56 +0700
+Processing by Manager::RoomsController#new as HTML
+  Rendering manager/rooms/new.html.erb within layouts/manager/application
+  Rendered shared/_error_messages.html.erb (0.3ms)
+  Rendered manager/rooms/_form.html.erb (6.0ms)
+  Rendered manager/rooms/new.html.erb within layouts/manager/application (6.8ms)
+  Rendered layouts/manager/_meta.html.erb (0.3ms)
+  Rendered layouts/manager/_style.html.erb (11.0ms)
+  Rendered layouts/manager/_nav.html.erb (2.2ms)
+  Rendered layouts/manager/_sidebar.html.erb (0.7ms)
+  Rendered layouts/manager/_footer.html.erb (0.3ms)
+  Rendered layouts/manager/_js.html.erb (28.7ms)
+Completed 200 OK in 66ms (Views: 54.1ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/manager/rooms" for ::1 at 2019-05-14 14:32:18 +0700
+Processing by Manager::RoomsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WSBTMS9TdyguAPam0ueqtHf/+AoGDAK8SAdPCKcJeu1lKRJqQj4oqcHn+Hedu8HUNjeCTJYVBzxs1PHFFbLuVw==", "room"=>{"name"=>"VIP2", "location_id"=>"1", "bed_detail_id"=>"1", "pictures"=>[#<ActionDispatch::Http::UploadedFile:0x00007f75c39f2f78 @tempfile=#<Tempfile:/tmp/RackMultipart20190514-3504-y79gmy.png>, @original_filename="Screenshot from 2019-04-30 12-20-07.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"room[pictures][]\"; filename=\"Screenshot from 2019-04-30 12-20-07.png\"\r\nContent-Type: image/png\r\n">, #<ActionDispatch::Http::UploadedFile:0x00007f75c39f2f28 @tempfile=#<Tempfile:/tmp/RackMultipart20190514-3504-jgl668.png>, @original_filename="Screenshot from 2019-04-30 13-29-04.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"room[pictures][]\"; filename=\"Screenshot from 2019-04-30 13-29-04.png\"\r\nContent-Type: image/png\r\n">, #<ActionDispatch::Http::UploadedFile:0x00007f75c39f2ed8 @tempfile=#<Tempfile:/tmp/RackMultipart20190514-3504-1khkcff.png>, @original_filename="Screenshot from 2019-05-07 14-13-31.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"room[pictures][]\"; filename=\"Screenshot from 2019-05-07 14-13-31.png\"\r\nContent-Type: image/png\r\n">, #<ActionDispatch::Http::UploadedFile:0x00007f75c39f2e60 @tempfile=#<Tempfile:/tmp/RackMultipart20190514-3504-coipue.png>, @original_filename="Screenshot from 2019-05-07 21-50-55.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"room[pictures][]\"; filename=\"Screenshot from 2019-05-07 21-50-55.png\"\r\nContent-Type: image/png\r\n">], "occupancy_limit"=>"1", "living_room"=>"1", "bed_room"=>"1", "bath_room"=>"1", "number_of_bed"=>"1", "quantity"=>"5", "price"=>"150000"}, "button"=>""}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/manager/rooms_controller.rb:20
+  [1m[36mLocation Load (0.3ms)[0m  [1m[34mSELECT  `locations`.* FROM `locations` WHERE `locations`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/manager/rooms_controller.rb:20
+  [1m[36mBedDetail Load (0.2ms)[0m  [1m[34mSELECT  `bed_details`.* FROM `bed_details` WHERE `bed_details`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/manager/rooms_controller.rb:20
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/manager/rooms_controller.rb:20
+  Rendering manager/rooms/new.html.erb within layouts/manager/application
+  Rendered shared/_error_messages.html.erb (0.6ms)
+  Rendered manager/rooms/_form.html.erb (3.5ms)
+  Rendered manager/rooms/new.html.erb within layouts/manager/application (4.2ms)
+  Rendered layouts/manager/_meta.html.erb (0.2ms)
+  Rendered layouts/manager/_style.html.erb (14.1ms)
+  Rendered layouts/manager/_nav.html.erb (22.7ms)
+  Rendered layouts/manager/_sidebar.html.erb (1.3ms)
+  Rendered layouts/manager/_footer.html.erb (0.3ms)
+  Rendered layouts/manager/_js.html.erb (32.0ms)
+Completed 200 OK in 103ms (Views: 78.9ms | ActiveRecord: 2.1ms)
+
+
+Started POST "/manager/rooms" for ::1 at 2019-05-14 14:32:32 +0700
+Processing by Manager::RoomsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KkWLKnEp/H1rpv4E7jBvz3R7Yuk+oeMYMiBVU6YmPzzfe1SwQlBJYQKXqjJZkgPbok1KpGrLYnLi7JlswpS+QA==", "room"=>{"name"=>"VIP2", "location_id"=>"1", "bed_detail_id"=>"1", "pictures"=>[#<ActionDispatch::Http::UploadedFile:0x00007f75c28026b0 @tempfile=#<Tempfile:/tmp/RackMultipart20190514-3504-sng6ns.png>, @original_filename="Screenshot from 2019-04-26 13-04-14.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"room[pictures][]\"; filename=\"Screenshot from 2019-04-26 13-04-14.png\"\r\nContent-Type: image/png\r\n">, #<ActionDispatch::Http::UploadedFile:0x00007f75c28025e8 @tempfile=#<Tempfile:/tmp/RackMultipart20190514-3504-1dwjgxn.png>, @original_filename="Screenshot from 2019-04-30 12-20-07.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"room[pictures][]\"; filename=\"Screenshot from 2019-04-30 12-20-07.png\"\r\nContent-Type: image/png\r\n">, #<ActionDispatch::Http::UploadedFile:0x00007f75c2802570 @tempfile=#<Tempfile:/tmp/RackMultipart20190514-3504-37vdck.png>, @original_filename="Screenshot from 2019-04-30 13-29-04.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"room[pictures][]\"; filename=\"Screenshot from 2019-04-30 13-29-04.png\"\r\nContent-Type: image/png\r\n">], "occupancy_limit"=>"1", "living_room"=>"1", "bed_room"=>"1", "bath_room"=>"1", "number_of_bed"=>"1", "quantity"=>"5", "price"=>"150000"}, "button"=>""}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/manager/rooms_controller.rb:20
+  [1m[36mLocation Load (0.2ms)[0m  [1m[34mSELECT  `locations`.* FROM `locations` WHERE `locations`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/manager/rooms_controller.rb:20
+  [1m[36mBedDetail Load (0.1ms)[0m  [1m[34mSELECT  `bed_details`.* FROM `bed_details` WHERE `bed_details`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/manager/rooms_controller.rb:20
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/manager/rooms_controller.rb:20
+  Rendering manager/rooms/new.html.erb within layouts/manager/application
+  Rendered shared/_error_messages.html.erb (1.1ms)
+  Rendered manager/rooms/_form.html.erb (5.0ms)
+  Rendered manager/rooms/new.html.erb within layouts/manager/application (6.1ms)
+  Rendered layouts/manager/_meta.html.erb (0.3ms)
+  Rendered layouts/manager/_style.html.erb (12.6ms)
+  Rendered layouts/manager/_nav.html.erb (3.0ms)
+  Rendered layouts/manager/_sidebar.html.erb (0.7ms)
+  Rendered layouts/manager/_footer.html.erb (0.2ms)
+  Rendered layouts/manager/_js.html.erb (46.8ms)
+Completed 200 OK in 80ms (Views: 73.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/manager/rooms" for ::1 at 2019-05-14 14:35:32 +0700
+Processing by Manager::RoomsController#index as HTML
+  Rendering manager/rooms/index.html.erb within layouts/manager/application
+  Rendered shared/_search.html.erb (0.6ms)
+  [1m[36mRoom Load (0.2ms)[0m  [1m[34mSELECT  `rooms`.* FROM `rooms` LIMIT 25 OFFSET 0[0m
+  ↳ app/views/manager/rooms/index.html.erb:25
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered manager/rooms/index.html.erb within layouts/manager/application (3.3ms)
+  Rendered layouts/manager/_meta.html.erb (0.3ms)
+  Rendered layouts/manager/_style.html.erb (11.6ms)
+  Rendered layouts/manager/_nav.html.erb (2.9ms)
+  Rendered layouts/manager/_sidebar.html.erb (0.7ms)
+  Rendered layouts/manager/_footer.html.erb (0.2ms)
+  Rendered layouts/manager/_js.html.erb (27.3ms)
+Completed 200 OK in 51ms (Views: 49.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/manager/rooms/new" for ::1 at 2019-05-14 14:35:35 +0700
+Processing by Manager::RoomsController#new as HTML
+  Rendering manager/rooms/new.html.erb within layouts/manager/application
+  Rendered shared/_error_messages.html.erb (0.4ms)
+  Rendered manager/rooms/_form.html.erb (4.2ms)
+  Rendered manager/rooms/new.html.erb within layouts/manager/application (5.3ms)
+  Rendered layouts/manager/_meta.html.erb (0.2ms)
+  Rendered layouts/manager/_style.html.erb (10.3ms)
+  Rendered layouts/manager/_nav.html.erb (3.1ms)
+  Rendered layouts/manager/_sidebar.html.erb (1.0ms)
+  Rendered layouts/manager/_footer.html.erb (0.2ms)
+  Rendered layouts/manager/_js.html.erb (37.7ms)
+Completed 200 OK in 63ms (Views: 61.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/manager/rooms" for ::1 at 2019-05-14 14:36:02 +0700
+Processing by Manager::RoomsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XFQ5jvsrtbqWVg5PdToq91Gq+khMNPc/IT9oJ9mhqqBgXXjVlkbqO3mxAJ46ZkGXEGKADtwt8r8F7Nbqaxo+Gg==", "room"=>{"name"=>"VIP2", "location_id"=>"1", "bed_detail_id"=>"1", "pictures"=>[#<ActionDispatch::Http::UploadedFile:0x00007f75c11c01b8 @tempfile=#<Tempfile:/tmp/RackMultipart20190514-3504-f705nc.png>, @original_filename="Screenshot from 2019-04-26 13-04-14.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"room[pictures][]\"; filename=\"Screenshot from 2019-04-26 13-04-14.png\"\r\nContent-Type: image/png\r\n">, #<ActionDispatch::Http::UploadedFile:0x00007f75c11c00f0 @tempfile=#<Tempfile:/tmp/RackMultipart20190514-3504-1qztdty.png>, @original_filename="Screenshot from 2019-04-30 12-20-07.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"room[pictures][]\"; filename=\"Screenshot from 2019-04-30 12-20-07.png\"\r\nContent-Type: image/png\r\n">, #<ActionDispatch::Http::UploadedFile:0x00007f75c11c0028 @tempfile=#<Tempfile:/tmp/RackMultipart20190514-3504-bao7pw.png>, @original_filename="Screenshot from 2019-04-30 13-29-04.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"room[pictures][]\"; filename=\"Screenshot from 2019-04-30 13-29-04.png\"\r\nContent-Type: image/png\r\n">], "occupancy_limit"=>"1", "living_room"=>"1", "bed_room"=>"1", "bath_room"=>"1", "number_of_bed"=>"1", "quantity"=>"5", "price"=>"150000"}, "button"=>""}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/manager/rooms_controller.rb:20
+  [1m[36mLocation Load (0.3ms)[0m  [1m[34mSELECT  `locations`.* FROM `locations` WHERE `locations`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/manager/rooms_controller.rb:20
+  [1m[36mBedDetail Load (0.3ms)[0m  [1m[34mSELECT  `bed_details`.* FROM `bed_details` WHERE `bed_details`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/manager/rooms_controller.rb:20
+  [1m[36mRoom Create (1.0ms)[0m  [1m[32mINSERT INTO `rooms` (`name`, `occupancy_limit`, `living_room`, `bed_room`, `bath_room`, `number_of_bed`, `quantity`, `price`, `bed_detail_id`, `location_id`, `created_at`, `updated_at`, `pictures`) VALUES ('VIP2', 1, 1, 1, 1, 1, 5, 150000.0, 1, 1, '2019-05-14 07:36:02', '2019-05-14 07:36:02', '[\"Screenshot_from_2019-04-26_13-04-14.png\",\"Screenshot_from_2019-04-30_12-20-07.png\",\"Screenshot_from_2019-04-30_13-29-04.png\"]')[0m
+  ↳ app/controllers/manager/rooms_controller.rb:20
+  [1m[35m (2.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/manager/rooms_controller.rb:20
+Redirected to http://localhost:3000/manager/rooms
+Completed 302 Found in 33ms (ActiveRecord: 4.5ms)
+
+
+Started GET "/manager/rooms" for ::1 at 2019-05-14 14:36:02 +0700
+Processing by Manager::RoomsController#index as HTML
+  Rendering manager/rooms/index.html.erb within layouts/manager/application
+  Rendered shared/_search.html.erb (0.6ms)
+  [1m[36mRoom Load (0.3ms)[0m  [1m[34mSELECT  `rooms`.* FROM `rooms` LIMIT 25 OFFSET 0[0m
+  ↳ app/views/manager/rooms/index.html.erb:25
+  Rendered collection of manager/rooms/_room.html.erb [1 times] (0.6ms)
+  Rendered manager/rooms/index.html.erb within layouts/manager/application (4.4ms)
+  Rendered layouts/manager/_meta.html.erb (0.3ms)
+  Rendered layouts/manager/_style.html.erb (13.1ms)
+  Rendered layouts/manager/_nav.html.erb (2.3ms)
+  Rendered layouts/manager/_sidebar.html.erb (0.6ms)
+  Rendered layouts/manager/_footer.html.erb (0.2ms)
+  Rendered layouts/manager/_js.html.erb (31.3ms)
+Completed 200 OK in 57ms (Views: 54.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2019-05-14 17:29:46 +0700
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/quangtu/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/quangtu/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_meta.html.erb (0.2ms)
+  Rendered layouts/_style.html.erb (1135.5ms)
+  Rendered layouts/_js.html.erb (233.9ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+  Rendered layouts/_banner.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (4.0ms)
+Completed 200 OK in 1385ms (Views: 1379.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/manager" for ::1 at 2019-05-14 17:29:50 +0700
+Processing by Manager::StaticPagesController#home as HTML
+  Rendering manager/static_pages/home.html.erb within layouts/manager/application
+  Rendered manager/static_pages/home.html.erb within layouts/manager/application (0.3ms)
+  Rendered layouts/manager/_meta.html.erb (0.3ms)
+  Rendered layouts/manager/_style.html.erb (23.9ms)
+  Rendered layouts/manager/_nav.html.erb (2.6ms)
+  Rendered layouts/manager/_sidebar.html.erb (0.7ms)
+  Rendered layouts/manager/_footer.html.erb (0.2ms)
+  Rendered layouts/manager/_js.html.erb (146.3ms)
+Completed 200 OK in 180ms (Views: 178.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/manager/locations" for ::1 at 2019-05-14 17:29:58 +0700
+Processing by Manager::LocationsController#index as HTML
+  Rendering manager/locations/index.html.erb within layouts/manager/application
+  Rendered shared/_search.html.erb (0.6ms)
+  [1m[36mLocation Load (0.3ms)[0m  [1m[34mSELECT  `locations`.* FROM `locations` LIMIT 25 OFFSET 0[0m
+  ↳ app/views/manager/locations/index.html.erb:23
+  Rendered collection of manager/locations/_location.html.erb [1 times] (0.7ms)
+  Rendered manager/locations/index.html.erb within layouts/manager/application (13.7ms)
+  Rendered layouts/manager/_meta.html.erb (0.2ms)
+  Rendered layouts/manager/_style.html.erb (11.7ms)
+  Rendered layouts/manager/_nav.html.erb (2.3ms)
+  Rendered layouts/manager/_sidebar.html.erb (0.6ms)
+  Rendered layouts/manager/_footer.html.erb (0.2ms)
+  Rendered layouts/manager/_js.html.erb (29.9ms)
+Completed 200 OK in 72ms (Views: 60.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/manager/locations/1" for ::1 at 2019-05-14 17:30:11 +0700
+Processing by Manager::LocationsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLocation Load (0.5ms)[0m  [1m[34mSELECT  `locations`.* FROM `locations` WHERE `locations`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/manager/locations_controller.rb:61
+  Rendering manager/locations/show.html.erb within layouts/manager/application
+  Rendered manager/locations/_modal.html.erb (0.5ms)
+  Rendered manager/locations/show.html.erb within layouts/manager/application (6.3ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (undefined method `price' for #<Location:0x00007f4887433cb8>):
+     6:     <div class="card-body">
+     7:       <address>
+     8:         <p class="font-weight-bold"><%= @location.name %></br>
+     9:           <%= @location.price %></br> <%= @location.occupancy_limit %>
+    10:           <%= (0...@room.pictures.count).each do |picture| %>
+    11:           <div style="width:300px; height:300px;">
+    12:             <%= image_tag(@room.pictures[picture].url, style:'width:100%; height: auto')%>
+  
+app/views/manager/locations/show.html.erb:9:in `_app_views_manager_locations_show_html_erb__4085291924750816840_69974741849320'
+Started GET "/manager/locations/1" for ::1 at 2019-05-14 17:30:41 +0700
+Processing by Manager::LocationsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLocation Load (0.4ms)[0m  [1m[34mSELECT  `locations`.* FROM `locations` WHERE `locations`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/manager/locations_controller.rb:61
+  Rendering manager/locations/show.html.erb within layouts/manager/application
+  Rendered manager/locations/_modal.html.erb (0.6ms)
+  Rendered manager/locations/show.html.erb within layouts/manager/application (7.0ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `price' for #<Location:0x00007f48881080b0>):
+     6:     <div class="card-body">
+     7:       <address>
+     8:         <p class="font-weight-bold"><%= @location.name %></br>
+     9:           <%= @location.price %></br> <%= @location.occupancy_limit %>
+    10:           <%= (0...@location.pictures.count).each do |picture| %>
+    11:           <div style="width:300px; height:300px;">
+    12:             <%= image_tag(@location.pictures[picture].url, style:'width:100%; height: auto')%>
+  
+app/views/manager/locations/show.html.erb:9:in `_app_views_manager_locations_show_html_erb__4085291924750816840_69974748608320'
+Started GET "/manager/locations/1" for ::1 at 2019-05-14 17:31:22 +0700
+Processing by Manager::LocationsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLocation Load (0.3ms)[0m  [1m[34mSELECT  `locations`.* FROM `locations` WHERE `locations`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/manager/locations_controller.rb:61
+  Rendering manager/locations/show.html.erb within layouts/manager/application
+  Rendered manager/locations/_modal.html.erb (0.8ms)
+  Rendered manager/locations/show.html.erb within layouts/manager/application (3.1ms)
+  Rendered layouts/manager/_meta.html.erb (0.4ms)
+  Rendered layouts/manager/_style.html.erb (15.7ms)
+  Rendered layouts/manager/_nav.html.erb (2.3ms)
+  Rendered layouts/manager/_sidebar.html.erb (1.1ms)
+  Rendered layouts/manager/_footer.html.erb (0.3ms)
+  Rendered layouts/manager/_js.html.erb (29.2ms)
+Completed 200 OK in 60ms (Views: 56.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/manager/locations/1" for ::1 at 2019-05-14 17:36:39 +0700
+Processing by Manager::LocationsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLocation Load (0.3ms)[0m  [1m[34mSELECT  `locations`.* FROM `locations` WHERE `locations`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/manager/locations_controller.rb:61
+  Rendering manager/locations/show.html.erb within layouts/manager/application
+  Rendered manager/locations/_modal.html.erb (0.6ms)
+  Rendered manager/locations/show.html.erb within layouts/manager/application (2.1ms)
+  Rendered layouts/manager/_meta.html.erb (0.2ms)
+  Rendered layouts/manager/_style.html.erb (10.9ms)
+  Rendered layouts/manager/_nav.html.erb (2.3ms)
+  Rendered layouts/manager/_sidebar.html.erb (0.9ms)
+  Rendered layouts/manager/_footer.html.erb (0.2ms)
+  Rendered layouts/manager/_js.html.erb (321.7ms)
+Completed 200 OK in 357ms (Views: 341.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for ::1 at 2019-05-14 17:36:43 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_meta.html.erb (0.3ms)
+  Rendered layouts/_style.html.erb (40.7ms)
+  Rendered layouts/_js.html.erb (189.2ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_banner.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (3.6ms)
+Completed 200 OK in 242ms (Views: 240.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/manager" for ::1 at 2019-05-14 17:36:47 +0700
+Processing by Manager::StaticPagesController#home as HTML
+  Rendering manager/static_pages/home.html.erb within layouts/manager/application
+  Rendered manager/static_pages/home.html.erb within layouts/manager/application (0.4ms)
+  Rendered layouts/manager/_meta.html.erb (0.5ms)
+  Rendered layouts/manager/_style.html.erb (12.4ms)
+  Rendered layouts/manager/_nav.html.erb (3.4ms)
+  Rendered layouts/manager/_sidebar.html.erb (1.1ms)
+  Rendered layouts/manager/_footer.html.erb (0.3ms)
+  Rendered layouts/manager/_js.html.erb (29.8ms)
+Completed 200 OK in 55ms (Views: 53.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/manager/locations" for ::1 at 2019-05-14 17:36:49 +0700
+Processing by Manager::LocationsController#index as HTML
+  Rendering manager/locations/index.html.erb within layouts/manager/application
+  Rendered shared/_search.html.erb (0.6ms)
+  [1m[36mLocation Load (0.3ms)[0m  [1m[34mSELECT  `locations`.* FROM `locations` LIMIT 25 OFFSET 0[0m
+  ↳ app/views/manager/locations/index.html.erb:23
+  Rendered collection of manager/locations/_location.html.erb [1 times] (0.6ms)
+  Rendered manager/locations/index.html.erb within layouts/manager/application (4.3ms)
+  Rendered layouts/manager/_meta.html.erb (0.3ms)
+  Rendered layouts/manager/_style.html.erb (11.5ms)
+  Rendered layouts/manager/_nav.html.erb (2.5ms)
+  Rendered layouts/manager/_sidebar.html.erb (0.9ms)
+  Rendered layouts/manager/_footer.html.erb (0.3ms)
+  Rendered layouts/manager/_js.html.erb (46.3ms)
+Completed 200 OK in 72ms (Views: 69.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/manager/locations/new" for ::1 at 2019-05-14 17:36:51 +0700
+Processing by Manager::LocationsController#new as HTML
+  Rendering manager/locations/new.html.erb within layouts/manager/application
+  Rendered shared/_error_messages.html.erb (0.4ms)
+  Rendered manager/locations/_form.html.erb (5.7ms)
+  Rendered manager/locations/new.html.erb within layouts/manager/application (6.6ms)
+  Rendered layouts/manager/_meta.html.erb (0.2ms)
+  Rendered layouts/manager/_style.html.erb (11.7ms)
+  Rendered layouts/manager/_nav.html.erb (2.3ms)
+  Rendered layouts/manager/_sidebar.html.erb (0.8ms)
+  Rendered layouts/manager/_footer.html.erb (0.2ms)
+  Rendered layouts/manager/_js.html.erb (25.7ms)
+Completed 200 OK in 55ms (Views: 51.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/manager/locations/new" for ::1 at 2019-05-14 17:37:04 +0700
+Processing by Manager::LocationsController#new as HTML
+  Rendering manager/locations/new.html.erb within layouts/manager/application
+  Rendered shared/_error_messages.html.erb (0.3ms)
+  Rendered manager/locations/_form.html.erb (3.5ms)
+  Rendered manager/locations/new.html.erb within layouts/manager/application (4.2ms)
+  Rendered layouts/manager/_meta.html.erb (0.4ms)
+  Rendered layouts/manager/_style.html.erb (10.8ms)
+  Rendered layouts/manager/_nav.html.erb (2.7ms)
+  Rendered layouts/manager/_sidebar.html.erb (1.0ms)
+  Rendered layouts/manager/_footer.html.erb (0.3ms)
+  Rendered layouts/manager/_js.html.erb (48.5ms)
+Completed 200 OK in 73ms (Views: 71.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/manager/locations/new" for ::1 at 2019-05-14 17:38:14 +0700
+Processing by Manager::LocationsController#new as HTML
+  Rendering manager/locations/new.html.erb within layouts/manager/application
+  Rendered shared/_error_messages.html.erb (0.3ms)
+  Rendered manager/locations/_form.html.erb (3.4ms)
+  Rendered manager/locations/new.html.erb within layouts/manager/application (4.4ms)
+  Rendered layouts/manager/_meta.html.erb (0.2ms)
+  Rendered layouts/manager/_style.html.erb (12.8ms)
+  Rendered layouts/manager/_nav.html.erb (2.6ms)
+  Rendered layouts/manager/_sidebar.html.erb (0.8ms)
+  Rendered layouts/manager/_footer.html.erb (0.2ms)
+  Rendered layouts/manager/_js.html.erb (338.3ms)
+Completed 200 OK in 378ms (Views: 363.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/manager/locations" for ::1 at 2019-05-14 17:39:14 +0700
+Processing by Manager::LocationsController#index as HTML
+  Rendering manager/locations/index.html.erb within layouts/manager/application
+  Rendered shared/_search.html.erb (0.5ms)
+  [1m[36mLocation Load (0.2ms)[0m  [1m[34mSELECT  `locations`.* FROM `locations` LIMIT 25 OFFSET 0[0m
+  ↳ app/views/manager/locations/index.html.erb:23
+  Rendered collection of manager/locations/_location.html.erb [1 times] (0.5ms)
+  Rendered manager/locations/index.html.erb within layouts/manager/application (4.0ms)
+  Rendered layouts/manager/_meta.html.erb (0.2ms)
+  Rendered layouts/manager/_style.html.erb (11.0ms)
+  Rendered layouts/manager/_nav.html.erb (2.4ms)
+  Rendered layouts/manager/_sidebar.html.erb (0.8ms)
+  Rendered layouts/manager/_footer.html.erb (0.3ms)
+  Rendered layouts/manager/_js.html.erb (26.1ms)
+Completed 200 OK in 51ms (Views: 48.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/manager/rooms/search?utf8=%E2%9C%93&content=Vung&field=description&button=" for ::1 at 2019-05-14 17:39:26 +0700
+Processing by Manager::RoomsController#search as HTML
+  Parameters: {"utf8"=>"✓", "content"=>"Vung", "field"=>"description", "button"=>""}
+Completed 406 Not Acceptable in 22ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::UnknownFormat (Manager::RoomsController#search is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.2.3) lib/action_controller/metal/implicit_render.rb:55:in `default_render'
+actionpack (5.2.3) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (5.2.3) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (5.2.3) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (5.2.3) lib/abstract_controller/base.rb:194:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.2.3) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (5.2.3) lib/active_support/callbacks.rb:132:in `run_callbacks'
+actionpack (5.2.3) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.3) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.3) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.3) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.3) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.3) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.3) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.3) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.3) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.3) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:840:in `call'
+i18n-js (3.2.1) lib/i18n/js/middleware.rb:14:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (5.2.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2019-05-15 08:06:42 +0700
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/quangtu/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/quangtu/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_meta.html.erb (0.2ms)
+  Rendered layouts/_style.html.erb (889.4ms)
+  Rendered layouts/_js.html.erb (215.3ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+  Rendered layouts/_banner.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (5.0ms)
+Completed 200 OK in 1122ms (Views: 1116.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/manager" for ::1 at 2019-05-15 08:06:46 +0700
+Processing by Manager::StaticPagesController#home as HTML
+  Rendering manager/static_pages/home.html.erb within layouts/manager/application
+  Rendered manager/static_pages/home.html.erb within layouts/manager/application (0.3ms)
+  Rendered layouts/manager/_meta.html.erb (0.2ms)
+  Rendered layouts/manager/_style.html.erb (20.6ms)
+  Rendered layouts/manager/_nav.html.erb (2.5ms)
+  Rendered layouts/manager/_sidebar.html.erb (0.8ms)
+  Rendered layouts/manager/_footer.html.erb (0.2ms)
+  Rendered layouts/manager/_js.html.erb (45.5ms)
+Completed 200 OK in 76ms (Views: 73.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/manager/rooms" for ::1 at 2019-05-15 08:06:51 +0700
+Processing by Manager::RoomsController#index as HTML
+  Rendering manager/rooms/index.html.erb within layouts/manager/application
+  Rendered shared/_search.html.erb (0.5ms)
+  [1m[36mRoom Load (0.2ms)[0m  [1m[34mSELECT  `rooms`.* FROM `rooms` LIMIT 25 OFFSET 0[0m
+  ↳ app/views/manager/rooms/index.html.erb:25
+  Rendered collection of manager/rooms/_room.html.erb [1 times] (0.7ms)
+  Rendered manager/rooms/index.html.erb within layouts/manager/application (13.8ms)
+  Rendered layouts/manager/_meta.html.erb (0.2ms)
+  Rendered layouts/manager/_style.html.erb (10.8ms)
+  Rendered layouts/manager/_nav.html.erb (13.9ms)
+  Rendered layouts/manager/_sidebar.html.erb (1.1ms)
+  Rendered layouts/manager/_footer.html.erb (0.3ms)
+  Rendered layouts/manager/_js.html.erb (26.1ms)
+Completed 200 OK in 78ms (Views: 68.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/manager/rooms/search?utf8=%E2%9C%93&content=&field=bed_room&button=" for ::1 at 2019-05-15 08:07:02 +0700
+Processing by Manager::RoomsController#search as HTML
+  Parameters: {"utf8"=>"✓", "content"=>"", "field"=>"bed_room", "button"=>""}
+Completed 406 Not Acceptable in 21ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::UnknownFormat (Manager::RoomsController#search is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.2.3) lib/action_controller/metal/implicit_render.rb:55:in `default_render'
+actionpack (5.2.3) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (5.2.3) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (5.2.3) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (5.2.3) lib/abstract_controller/base.rb:194:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.2.3) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (5.2.3) lib/active_support/callbacks.rb:132:in `run_callbacks'
+actionpack (5.2.3) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.3) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.3) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.3) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.3) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.3) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.3) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.3) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.3) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.3) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:840:in `call'
+i18n-js (3.2.1) lib/i18n/js/middleware.rb:14:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (5.2.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/manager/rooms/search?utf8=%E2%9C%93&content=&field=name&button=" for ::1 at 2019-05-15 08:07:08 +0700
+Processing by Manager::RoomsController#search as HTML
+  Parameters: {"utf8"=>"✓", "content"=>"", "field"=>"name", "button"=>""}
+Completed 406 Not Acceptable in 16ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::UnknownFormat (Manager::RoomsController#search is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.2.3) lib/action_controller/metal/implicit_render.rb:55:in `default_render'
+actionpack (5.2.3) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (5.2.3) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (5.2.3) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (5.2.3) lib/abstract_controller/base.rb:194:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.2.3) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (5.2.3) lib/active_support/callbacks.rb:132:in `run_callbacks'
+actionpack (5.2.3) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.3) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.3) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.3) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.3) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.3) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.3) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.3) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.3) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.3) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:840:in `call'
+i18n-js (3.2.1) lib/i18n/js/middleware.rb:14:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (5.2.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/manager/rooms/search?utf8=%E2%9C%93&content=&field=name&button=" for ::1 at 2019-05-15 08:10:24 +0700
+Processing by Manager::RoomsController#search as HTML
+  Parameters: {"utf8"=>"✓", "content"=>"", "field"=>"name", "button"=>""}
+  [1m[36mRoom Load (0.5ms)[0m  [1m[34mSELECT  `rooms`.* FROM `rooms` WHERE (name LIKE '%%') LIMIT 11 OFFSET 0[0m
+  ↳ /home/quangtu/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Completed 500 Internal Server Error in 115ms (ActiveRecord: 0.0ms)
+
+
+  
+  [1m[36mCACHE Room Load (0.0ms)[0m  [1m[34mSELECT  `rooms`.* FROM `rooms` WHERE (name LIKE '%%') LIMIT 11 OFFSET 0[0m
+  ↳ /home/quangtu/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+NoMethodError (undefined method `reder' for #<Manager::RoomsController:0x00007f8a82e3fb70>
+Did you mean?  render):
+  
+app/controllers/manager/rooms_controller.rb:12:in `search'
+Started GET "/manager/rooms/search?utf8=%E2%9C%93&content=&field=name&button=" for ::1 at 2019-05-15 08:10:32 +0700
+Processing by Manager::RoomsController#search as HTML
+  Parameters: {"utf8"=>"✓", "content"=>"", "field"=>"name", "button"=>""}
+  Rendering manager/rooms/index.html.erb within layouts/manager/application
+  Rendered shared/_search.html.erb (0.7ms)
+  [1m[36mRoom Load (0.3ms)[0m  [1m[34mSELECT  `rooms`.* FROM `rooms` WHERE (name LIKE '%%') LIMIT 25 OFFSET 0[0m
+  ↳ app/views/manager/rooms/index.html.erb:25
+  Rendered collection of manager/rooms/_room.html.erb [1 times] (0.6ms)
+  Rendered manager/rooms/index.html.erb within layouts/manager/application (13.6ms)
+  Rendered layouts/manager/_meta.html.erb (0.3ms)
+  Rendered layouts/manager/_style.html.erb (10.9ms)
+  Rendered layouts/manager/_nav.html.erb (2.2ms)
+  Rendered layouts/manager/_sidebar.html.erb (1.3ms)
+  Rendered layouts/manager/_footer.html.erb (0.3ms)
+  Rendered layouts/manager/_js.html.erb (44.2ms)
+Completed 200 OK in 85ms (Views: 76.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/manager/rooms/search?utf8=%E2%9C%93&content=&field=name&button=" for ::1 at 2019-05-15 08:10:36 +0700
+Processing by Manager::RoomsController#search as HTML
+  Parameters: {"utf8"=>"✓", "content"=>"", "field"=>"name", "button"=>""}
+  Rendering manager/rooms/index.html.erb within layouts/manager/application
+  Rendered shared/_search.html.erb (1.0ms)
+  [1m[36mRoom Load (0.4ms)[0m  [1m[34mSELECT  `rooms`.* FROM `rooms` WHERE (name LIKE '%%') LIMIT 25 OFFSET 0[0m
+  ↳ app/views/manager/rooms/index.html.erb:25
+  Rendered collection of manager/rooms/_room.html.erb [1 times] (0.9ms)
+  Rendered manager/rooms/index.html.erb within layouts/manager/application (6.1ms)
+  Rendered layouts/manager/_meta.html.erb (0.2ms)
+  Rendered layouts/manager/_style.html.erb (11.6ms)
+  Rendered layouts/manager/_nav.html.erb (3.0ms)
+  Rendered layouts/manager/_sidebar.html.erb (0.8ms)
+  Rendered layouts/manager/_footer.html.erb (0.2ms)
+  Rendered layouts/manager/_js.html.erb (28.3ms)
+Completed 200 OK in 55ms (Views: 53.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/manager/rooms/search?utf8=%E2%9C%93&content=&field=name&button=" for ::1 at 2019-05-15 08:11:17 +0700
+Processing by Manager::RoomsController#search as HTML
+  Parameters: {"utf8"=>"✓", "content"=>"", "field"=>"name", "button"=>""}
+  Rendering manager/rooms/index.html.erb within layouts/manager/application
+  Rendered shared/_search.html.erb (0.8ms)
+  [1m[36mRoom Load (0.3ms)[0m  [1m[34mSELECT  `rooms`.* FROM `rooms` WHERE (name LIKE '%%') LIMIT 25 OFFSET 0[0m
+  ↳ app/views/manager/rooms/index.html.erb:25
+  Rendered collection of manager/rooms/_room.html.erb [1 times] (0.6ms)
+  Rendered manager/rooms/index.html.erb within layouts/manager/application (14.4ms)
+  Rendered layouts/manager/_meta.html.erb (0.3ms)
+  Rendered layouts/manager/_style.html.erb (11.8ms)
+  Rendered layouts/manager/_nav.html.erb (3.7ms)
+  Rendered layouts/manager/_sidebar.html.erb (1.1ms)
+  Rendered layouts/manager/_footer.html.erb (0.3ms)
+  Rendered layouts/manager/_js.html.erb (29.4ms)
+Completed 200 OK in 92ms (Views: 64.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/manager/locations" for ::1 at 2019-05-15 08:11:19 +0700
+Processing by Manager::LocationsController#index as HTML
+  Rendering manager/locations/index.html.erb within layouts/manager/application
+  Rendered shared/_search.html.erb (0.5ms)
+  [1m[36mLocation Load (0.3ms)[0m  [1m[34mSELECT  `locations`.* FROM `locations` LIMIT 25 OFFSET 0[0m
+  ↳ app/views/manager/locations/index.html.erb:23
+  Rendered collection of manager/locations/_location.html.erb [1 times] (0.8ms)
+  Rendered manager/locations/index.html.erb within layouts/manager/application (11.5ms)
+  Rendered layouts/manager/_meta.html.erb (0.3ms)
+  Rendered layouts/manager/_style.html.erb (25.2ms)
+  Rendered layouts/manager/_nav.html.erb (2.5ms)
+  Rendered layouts/manager/_sidebar.html.erb (0.9ms)
+  Rendered layouts/manager/_footer.html.erb (0.3ms)
+  Rendered layouts/manager/_js.html.erb (27.0ms)
+Completed 200 OK in 78ms (Views: 70.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/manager/rooms/search?utf8=%E2%9C%93&content=Vung&field=name&button=" for ::1 at 2019-05-15 08:11:29 +0700
+Processing by Manager::RoomsController#search as HTML
+  Parameters: {"utf8"=>"✓", "content"=>"Vung", "field"=>"name", "button"=>""}
+  Rendering manager/rooms/index.html.erb within layouts/manager/application
+  Rendered shared/_search.html.erb (0.5ms)
+  [1m[36mRoom Load (0.3ms)[0m  [1m[34mSELECT  `rooms`.* FROM `rooms` WHERE (name LIKE '%Vung%') LIMIT 25 OFFSET 0[0m
+  ↳ app/views/manager/rooms/index.html.erb:25
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered manager/rooms/index.html.erb within layouts/manager/application (3.1ms)
+  Rendered layouts/manager/_meta.html.erb (0.4ms)
+  Rendered layouts/manager/_style.html.erb (11.2ms)
+  Rendered layouts/manager/_nav.html.erb (2.4ms)
+  Rendered layouts/manager/_sidebar.html.erb (1.3ms)
+  Rendered layouts/manager/_footer.html.erb (0.5ms)
+  Rendered layouts/manager/_js.html.erb (47.6ms)
+Completed 200 OK in 72ms (Views: 70.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/manager/locations" for ::1 at 2019-05-15 08:12:32 +0700
+Processing by Manager::LocationsController#index as HTML
+  Rendering manager/locations/index.html.erb within layouts/manager/application
+  Rendered shared/_search.html.erb (0.6ms)
+  [1m[36mLocation Load (0.3ms)[0m  [1m[34mSELECT  `locations`.* FROM `locations` LIMIT 25 OFFSET 0[0m
+  ↳ app/views/manager/locations/index.html.erb:23
+  Rendered collection of manager/locations/_location.html.erb [1 times] (0.5ms)
+  Rendered manager/locations/index.html.erb within layouts/manager/application (4.1ms)
+  Rendered layouts/manager/_meta.html.erb (0.2ms)
+  Rendered layouts/manager/_style.html.erb (10.7ms)
+  Rendered layouts/manager/_nav.html.erb (4.3ms)
+  Rendered layouts/manager/_sidebar.html.erb (0.8ms)
+  Rendered layouts/manager/_footer.html.erb (0.2ms)
+  Rendered layouts/manager/_js.html.erb (25.1ms)
+Completed 200 OK in 53ms (Views: 49.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/manager/rooms/search?utf8=%E2%9C%93&content=Vung&field=national&button=" for ::1 at 2019-05-15 08:12:40 +0700
+Processing by Manager::RoomsController#search as HTML
+  Parameters: {"utf8"=>"✓", "content"=>"Vung", "field"=>"national", "button"=>""}
+  Rendering manager/rooms/index.html.erb within layouts/manager/application
+  Rendered shared/_search.html.erb (0.5ms)
+  [1m[36mRoom Load (0.6ms)[0m  [1m[34mSELECT  `rooms`.* FROM `rooms` WHERE (national LIKE '%Vung%') LIMIT 25 OFFSET 0[0m
+  ↳ app/views/manager/rooms/index.html.erb:25
+  Rendered manager/rooms/index.html.erb within layouts/manager/application (2.8ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (Mysql2::Error: Unknown column 'national' in 'where clause': SELECT  `rooms`.* FROM `rooms` WHERE (national LIKE '%Vung%') LIMIT 25 OFFSET 0):
+    22:           </tr>
+    23:         </thead>
+    24:         <tbody>
+    25:           <%= render @rooms %>
+    26:         </tbody>
+    27:       </table>
+    28:       <%= paginate @rooms %>
+  
+app/views/manager/rooms/index.html.erb:25:in `_app_views_manager_rooms_index_html_erb___3302375329768100903_70116446066540'
+app/controllers/manager/rooms_controller.rb:12:in `search'
+Started GET "/manager/rooms/search?utf8=%E2%9C%93&content=Vung&field=national&button=" for ::1 at 2019-05-15 08:12:52 +0700
+Processing by Manager::RoomsController#search as HTML
+  Parameters: {"utf8"=>"✓", "content"=>"Vung", "field"=>"national", "button"=>""}
+  Rendering manager/rooms/index.html.erb within layouts/manager/application
+  Rendered shared/_search.html.erb (0.5ms)
+  [1m[36mRoom Load (0.5ms)[0m  [1m[34mSELECT  `rooms`.* FROM `rooms` WHERE (national LIKE '%Vung%') LIMIT 25 OFFSET 0[0m
+  ↳ app/views/manager/rooms/index.html.erb:25
+  Rendered manager/rooms/index.html.erb within layouts/manager/application (2.8ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (Mysql2::Error: Unknown column 'national' in 'where clause': SELECT  `rooms`.* FROM `rooms` WHERE (national LIKE '%Vung%') LIMIT 25 OFFSET 0):
+    22:           </tr>
+    23:         </thead>
+    24:         <tbody>
+    25:           <%= render @rooms %>
+    26:         </tbody>
+    27:       </table>
+    28:       <%= paginate @rooms %>
+  
+app/views/manager/rooms/index.html.erb:25:in `_app_views_manager_rooms_index_html_erb___3302375329768100903_47211546903420'
+app/controllers/manager/rooms_controller.rb:12:in `search'
+Started GET "/manager/rooms/search?utf8=%E2%9C%93&content=Vung&field=national&button=" for ::1 at 2019-05-15 08:14:06 +0700
+Processing by Manager::RoomsController#search as HTML
+  Parameters: {"utf8"=>"✓", "content"=>"Vung", "field"=>"national", "button"=>""}
+  Rendering manager/rooms/index.html.erb within layouts/manager/application
+  Rendered shared/_search.html.erb (0.7ms)
+  [1m[36mRoom Load (0.6ms)[0m  [1m[34mSELECT  `rooms`.* FROM `rooms` WHERE (national LIKE '%Vung%') LIMIT 25 OFFSET 0[0m
+  ↳ app/views/manager/rooms/index.html.erb:25
+  Rendered manager/rooms/index.html.erb within layouts/manager/application (3.3ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (Mysql2::Error: Unknown column 'national' in 'where clause': SELECT  `rooms`.* FROM `rooms` WHERE (national LIKE '%Vung%') LIMIT 25 OFFSET 0):
+    22:           </tr>
+    23:         </thead>
+    24:         <tbody>
+    25:           <%= render @rooms %>
+    26:         </tbody>
+    27:       </table>
+    28:       <%= paginate @rooms %>
+  
+app/views/manager/rooms/index.html.erb:25:in `_app_views_manager_rooms_index_html_erb___3302375329768100903_70116429009840'
+app/controllers/manager/rooms_controller.rb:12:in `search'
+Started GET "/manager/rooms" for ::1 at 2019-05-15 08:14:09 +0700
+Processing by Manager::RoomsController#index as HTML
+  Rendering manager/rooms/index.html.erb within layouts/manager/application
+  Rendered shared/_search.html.erb (1.6ms)
+  [1m[36mRoom Load (0.3ms)[0m  [1m[34mSELECT  `rooms`.* FROM `rooms` LIMIT 25 OFFSET 0[0m
+  ↳ app/views/manager/rooms/index.html.erb:25
+  Rendered collection of manager/rooms/_room.html.erb [1 times] (1.2ms)
+  Rendered manager/rooms/index.html.erb within layouts/manager/application (7.9ms)
+  Rendered layouts/manager/_meta.html.erb (0.5ms)
+  Rendered layouts/manager/_style.html.erb (19.0ms)
+  Rendered layouts/manager/_nav.html.erb (2.5ms)
+  Rendered layouts/manager/_sidebar.html.erb (0.9ms)
+  Rendered layouts/manager/_footer.html.erb (0.4ms)
+  Rendered layouts/manager/_js.html.erb (46.7ms)
+Completed 200 OK in 84ms (Views: 82.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/manager" for ::1 at 2019-05-15 08:14:11 +0700
+Processing by Manager::StaticPagesController#home as HTML
+  Rendering manager/static_pages/home.html.erb within layouts/manager/application
+  Rendered manager/static_pages/home.html.erb within layouts/manager/application (0.2ms)
+  Rendered layouts/manager/_meta.html.erb (0.3ms)
+  Rendered layouts/manager/_style.html.erb (11.4ms)
+  Rendered layouts/manager/_nav.html.erb (2.6ms)
+  Rendered layouts/manager/_sidebar.html.erb (0.8ms)
+  Rendered layouts/manager/_footer.html.erb (0.2ms)
+  Rendered layouts/manager/_js.html.erb (24.5ms)
+Completed 200 OK in 45ms (Views: 43.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/manager/locations" for ::1 at 2019-05-15 08:14:19 +0700
+Processing by Manager::LocationsController#index as HTML
+  Rendering manager/locations/index.html.erb within layouts/manager/application
+  Rendered shared/_search.html.erb (0.5ms)
+  [1m[36mLocation Load (0.3ms)[0m  [1m[34mSELECT  `locations`.* FROM `locations` LIMIT 25 OFFSET 0[0m
+  ↳ app/views/manager/locations/index.html.erb:23
+  Rendered collection of manager/locations/_location.html.erb [1 times] (0.5ms)
+  Rendered manager/locations/index.html.erb within layouts/manager/application (4.0ms)
+  Rendered layouts/manager/_meta.html.erb (0.3ms)
+  Rendered layouts/manager/_style.html.erb (24.7ms)
+  Rendered layouts/manager/_nav.html.erb (2.7ms)
+  Rendered layouts/manager/_sidebar.html.erb (0.8ms)
+  Rendered layouts/manager/_footer.html.erb (0.2ms)
+  Rendered layouts/manager/_js.html.erb (27.5ms)
+Completed 200 OK in 66ms (Views: 63.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/manager/locations/search?utf8=%E2%9C%93&content=Vung&field=national&button=" for ::1 at 2019-05-15 08:14:24 +0700
+Processing by Manager::LocationsController#search as HTML
+  Parameters: {"utf8"=>"✓", "content"=>"Vung", "field"=>"national", "button"=>""}
+  Rendering manager/locations/index.html.erb within layouts/manager/application
+  Rendered shared/_search.html.erb (0.5ms)
+  [1m[36mLocation Load (0.3ms)[0m  [1m[34mSELECT  `locations`.* FROM `locations` WHERE (national LIKE '%Vung%') LIMIT 25 OFFSET 0[0m
+  ↳ app/views/manager/locations/index.html.erb:23
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered manager/locations/index.html.erb within layouts/manager/application (3.2ms)
+  Rendered layouts/manager/_meta.html.erb (0.3ms)
+  Rendered layouts/manager/_style.html.erb (11.4ms)
+  Rendered layouts/manager/_nav.html.erb (4.6ms)
+  Rendered layouts/manager/_sidebar.html.erb (1.0ms)
+  Rendered layouts/manager/_footer.html.erb (0.2ms)
+  Rendered layouts/manager/_js.html.erb (41.1ms)
+Completed 200 OK in 66ms (Views: 64.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/manager/locations/search?utf8=%E2%9C%93&content=&field=national&button=" for ::1 at 2019-05-15 08:14:32 +0700
+Processing by Manager::LocationsController#search as HTML
+  Parameters: {"utf8"=>"✓", "content"=>"", "field"=>"national", "button"=>""}
+  Rendering manager/locations/index.html.erb within layouts/manager/application
+  Rendered shared/_search.html.erb (0.6ms)
+  [1m[36mLocation Load (0.3ms)[0m  [1m[34mSELECT  `locations`.* FROM `locations` WHERE (national LIKE '%%') LIMIT 25 OFFSET 0[0m
+  ↳ app/views/manager/locations/index.html.erb:23
+  Rendered collection of manager/locations/_location.html.erb [1 times] (0.8ms)
+  Rendered manager/locations/index.html.erb within layouts/manager/application (4.6ms)
+  Rendered layouts/manager/_meta.html.erb (0.3ms)
+  Rendered layouts/manager/_style.html.erb (11.7ms)
+  Rendered layouts/manager/_nav.html.erb (3.2ms)
+  Rendered layouts/manager/_sidebar.html.erb (1.1ms)
+  Rendered layouts/manager/_footer.html.erb (0.3ms)
+  Rendered layouts/manager/_js.html.erb (44.0ms)
+Completed 200 OK in 70ms (Views: 68.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/manager/locations/1" for ::1 at 2019-05-15 08:15:46 +0700
+Processing by Manager::LocationsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLocation Load (0.3ms)[0m  [1m[34mSELECT  `locations`.* FROM `locations` WHERE `locations`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/manager/locations_controller.rb:62
+  Rendering manager/locations/show.html.erb within layouts/manager/application
+  Rendered manager/locations/_modal.html.erb (0.5ms)
+  Rendered manager/locations/show.html.erb within layouts/manager/application (1.8ms)
+  Rendered layouts/manager/_meta.html.erb (0.2ms)
+  Rendered layouts/manager/_style.html.erb (12.0ms)
+  Rendered layouts/manager/_nav.html.erb (2.2ms)
+  Rendered layouts/manager/_sidebar.html.erb (0.7ms)
+  Rendered layouts/manager/_footer.html.erb (0.2ms)
+  Rendered layouts/manager/_js.html.erb (26.5ms)
+Completed 200 OK in 56ms (Views: 46.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/manager/rooms/new" for ::1 at 2019-05-15 08:15:50 +0700
+Processing by Manager::RoomsController#new as HTML
+  Rendering manager/rooms/new.html.erb within layouts/manager/application
+  Rendered shared/_error_messages.html.erb (0.3ms)
+  Rendered manager/rooms/_form.html.erb (5.5ms)
+  Rendered manager/rooms/new.html.erb within layouts/manager/application (6.4ms)
+  Rendered layouts/manager/_meta.html.erb (0.3ms)
+  Rendered layouts/manager/_style.html.erb (22.2ms)
+  Rendered layouts/manager/_nav.html.erb (2.5ms)
+  Rendered layouts/manager/_sidebar.html.erb (0.7ms)
+  Rendered layouts/manager/_footer.html.erb (0.2ms)
+  Rendered layouts/manager/_js.html.erb (26.6ms)
+Completed 200 OK in 64ms (Views: 62.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/manager/rooms/new" for ::1 at 2019-05-15 08:15:57 +0700
+Processing by Manager::RoomsController#new as HTML
+  Rendering manager/rooms/new.html.erb within layouts/manager/application
+  Rendered shared/_error_messages.html.erb (0.3ms)
+  Rendered manager/rooms/_form.html.erb (3.1ms)
+  Rendered manager/rooms/new.html.erb within layouts/manager/application (3.8ms)
+  Rendered layouts/manager/_meta.html.erb (0.3ms)
+  Rendered layouts/manager/_style.html.erb (11.5ms)
+  Rendered layouts/manager/_nav.html.erb (2.6ms)
+  Rendered layouts/manager/_sidebar.html.erb (0.8ms)
+  Rendered layouts/manager/_footer.html.erb (0.2ms)
+  Rendered layouts/manager/_js.html.erb (36.2ms)
+Completed 200 OK in 60ms (Views: 58.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/manager/rooms/1" for ::1 at 2019-05-15 08:15:59 +0700
+Processing by Manager::RoomsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRoom Load (0.3ms)[0m  [1m[34mSELECT  `rooms`.* FROM `rooms` WHERE `rooms`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/manager/rooms_controller.rb:62
+  Rendering manager/rooms/show.html.erb within layouts/manager/application
+  Rendered manager/rooms/_modal.html.erb (1.2ms)
+  Rendered manager/rooms/show.html.erb within layouts/manager/application (6.2ms)
+  Rendered layouts/manager/_meta.html.erb (1.0ms)
+  Rendered layouts/manager/_style.html.erb (29.7ms)
+  Rendered layouts/manager/_nav.html.erb (4.1ms)
+  Rendered layouts/manager/_sidebar.html.erb (2.1ms)
+  Rendered layouts/manager/_footer.html.erb (1.5ms)
+  Rendered layouts/manager/_js.html.erb (71.5ms)
+Completed 200 OK in 125ms (Views: 121.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/manager/rooms" for ::1 at 2019-05-15 08:16:19 +0700
+Processing by Manager::RoomsController#index as HTML
+  Rendering manager/rooms/index.html.erb within layouts/manager/application
+  Rendered shared/_search.html.erb (0.6ms)
+  [1m[36mRoom Load (0.3ms)[0m  [1m[34mSELECT  `rooms`.* FROM `rooms` LIMIT 25 OFFSET 0[0m
+  ↳ app/views/manager/rooms/index.html.erb:25
+  Rendered collection of manager/rooms/_room.html.erb [1 times] (0.8ms)
+  Rendered manager/rooms/index.html.erb within layouts/manager/application (5.8ms)
+  Rendered layouts/manager/_meta.html.erb (0.9ms)
+  Rendered layouts/manager/_style.html.erb (13.2ms)
+  Rendered layouts/manager/_nav.html.erb (3.4ms)
+  Rendered layouts/manager/_sidebar.html.erb (0.9ms)
+  Rendered layouts/manager/_footer.html.erb (0.3ms)
+  Rendered layouts/manager/_js.html.erb (30.4ms)
+Completed 200 OK in 61ms (Views: 59.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/manager/rooms" for ::1 at 2019-05-15 08:16:19 +0700
+Processing by Manager::RoomsController#index as HTML
+  Rendering manager/rooms/index.html.erb within layouts/manager/application
+  Rendered shared/_search.html.erb (0.8ms)
+  [1m[36mRoom Load (0.3ms)[0m  [1m[34mSELECT  `rooms`.* FROM `rooms` LIMIT 25 OFFSET 0[0m
+  ↳ app/views/manager/rooms/index.html.erb:25
+  Rendered collection of manager/rooms/_room.html.erb [1 times] (0.8ms)
+  Rendered manager/rooms/index.html.erb within layouts/manager/application (5.7ms)
+  Rendered layouts/manager/_meta.html.erb (0.3ms)
+  Rendered layouts/manager/_style.html.erb (32.9ms)
+  Rendered layouts/manager/_nav.html.erb (2.6ms)
+  Rendered layouts/manager/_sidebar.html.erb (0.8ms)
+  Rendered layouts/manager/_footer.html.erb (0.2ms)
+  Rendered layouts/manager/_js.html.erb (27.9ms)
+Completed 200 OK in 76ms (Views: 73.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/manager/rooms" for ::1 at 2019-05-15 08:16:19 +0700
+Processing by Manager::RoomsController#index as HTML
+  Rendering manager/rooms/index.html.erb within layouts/manager/application
+  Rendered shared/_search.html.erb (0.5ms)
+  [1m[36mRoom Load (0.2ms)[0m  [1m[34mSELECT  `rooms`.* FROM `rooms` LIMIT 25 OFFSET 0[0m
+  ↳ app/views/manager/rooms/index.html.erb:25
+  Rendered collection of manager/rooms/_room.html.erb [1 times] (0.8ms)
+  Rendered manager/rooms/index.html.erb within layouts/manager/application (4.7ms)
+  Rendered layouts/manager/_meta.html.erb (0.5ms)
+  Rendered layouts/manager/_style.html.erb (13.4ms)
+  Rendered layouts/manager/_nav.html.erb (3.0ms)
+  Rendered layouts/manager/_sidebar.html.erb (1.0ms)
+  Rendered layouts/manager/_footer.html.erb (0.3ms)
+  Rendered layouts/manager/_js.html.erb (44.3ms)
+Completed 200 OK in 72ms (Views: 70.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/manager/rooms" for ::1 at 2019-05-15 08:16:19 +0700
+Processing by Manager::RoomsController#index as HTML
+  Rendering manager/rooms/index.html.erb within layouts/manager/application
+  Rendered shared/_search.html.erb (0.6ms)
+  [1m[36mRoom Load (0.3ms)[0m  [1m[34mSELECT  `rooms`.* FROM `rooms` LIMIT 25 OFFSET 0[0m
+  ↳ app/views/manager/rooms/index.html.erb:25
+  Rendered collection of manager/rooms/_room.html.erb [1 times] (0.8ms)
+  Rendered manager/rooms/index.html.erb within layouts/manager/application (5.0ms)
+  Rendered layouts/manager/_meta.html.erb (0.3ms)
+  Rendered layouts/manager/_style.html.erb (14.1ms)
+  Rendered layouts/manager/_nav.html.erb (2.8ms)
+  Rendered layouts/manager/_sidebar.html.erb (1.1ms)
+  Rendered layouts/manager/_footer.html.erb (0.3ms)
+  Rendered layouts/manager/_js.html.erb (30.0ms)
+Completed 200 OK in 59ms (Views: 57.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/manager/rooms" for ::1 at 2019-05-15 08:16:19 +0700
+Processing by Manager::RoomsController#index as HTML
+  Rendering manager/rooms/index.html.erb within layouts/manager/application
+  Rendered shared/_search.html.erb (0.9ms)
+  [1m[36mRoom Load (0.3ms)[0m  [1m[34mSELECT  `rooms`.* FROM `rooms` LIMIT 25 OFFSET 0[0m
+  ↳ app/views/manager/rooms/index.html.erb:25
+  Rendered collection of manager/rooms/_room.html.erb [1 times] (1.0ms)
+  Rendered manager/rooms/index.html.erb within layouts/manager/application (6.7ms)
+  Rendered layouts/manager/_meta.html.erb (0.4ms)
+  Rendered layouts/manager/_style.html.erb (35.1ms)
+  Rendered layouts/manager/_nav.html.erb (2.6ms)
+  Rendered layouts/manager/_sidebar.html.erb (0.8ms)
+  Rendered layouts/manager/_footer.html.erb (0.2ms)
+  Rendered layouts/manager/_js.html.erb (28.7ms)
+Completed 200 OK in 80ms (Views: 78.1ms | ActiveRecord: 0.3ms)
+
+

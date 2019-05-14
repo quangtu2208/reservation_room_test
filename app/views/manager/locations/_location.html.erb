@@ -1,0 +1,11 @@
+<tr>
+  <td><%= link_to location.name, manager_location_path(location) %></td>
+  <td><%= location.location %></td>
+  <td><%= location.national %></td>
+  <td><%= location.zip_code %></td>
+  <td><%= location.description %></td>
+  <td><%= location.status %></td>
+  <td><%= location.location_type_id %></td>
+  <td><%= location.created_at.strftime(Settings.datetime_format) %></td>
+  <td><%= location.updated_at.strftime(Settings.datetime_format) %></td>
+</tr>

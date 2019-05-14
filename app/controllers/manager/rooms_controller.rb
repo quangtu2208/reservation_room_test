@@ -9,6 +9,7 @@ class Manager::RoomsController < Manager::ApplicationController
 
   def search
     @rooms = SearchQuery.new(Room,search_params,Settings.search_fields.room).all.page(params[:page]).per Settings.page
+    render :index
   end
 
   def new
@@ -38,6 +39,7 @@ class Manager::RoomsController < Manager::ApplicationController
   end
 
   def destroy
+    redirect_to manager_rooms_path if @room.reservation_details.any?
     if @room.destroy
       flash[:success] = t(".room_deleted")
       redirect_to request.referrer

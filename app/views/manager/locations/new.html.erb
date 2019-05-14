@@ -1,0 +1,13 @@
+<%= provide :title, t(".add_new_location") %>
+<%= provide :button_text, t(".submit") %>
+
+<div class="row flex-grow">
+  <div class="col-12">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title"><%= t ".add_new_location" %></h4>
+        <%= render "form" %>
+      </div>
+    </div>
+  </div>
+</div>

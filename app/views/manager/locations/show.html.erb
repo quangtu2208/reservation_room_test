@@ -1,0 +1,23 @@
+<%= provide :title, @location.name %>
+
+<%= render "manager/locations/modal" %>
+<div class="row">
+  <div class="col-12 card">
+    <div class="card-body">
+      <address>
+        <p class="font-weight-bold"><%= @location.name %></br>
+          <%= @location.national %></br> <%= @location.description %>
+          <%= (0...@location.pictures.count).each do |picture| %>
+          <div style="width:300px; height:300px;">
+            <%= image_tag(@location.pictures[picture].url, style:'width:100%; height: auto')%>
+          </div>
+          <% end %>
+          </p>
+        <p><%= t ".created_at" %>: <%= @location.created_at.strftime(Settings.datetime_format) %></p>
+        <p><%= t ".updated_at" %>: <%= @location.updated_at.strftime(Settings.datetime_format) %></p>
+      </address>
+      <%= button_tag t(".del_but"), class: "btn btn-danger btn-sm float-right ml-1", data: {toggle: "modal", target: "#deleteModal"} %>
+      <%= link_to t(".edit_but"), edit_manager_location_path(@location), class: "btn btn-primary btn-sm float-right" %>
+    </div>
+  </div>
+</div>

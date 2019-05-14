@@ -27,6 +27,9 @@ en:
         rooms: "Rooms"
         list_room: "List rooms"
         create_room: "Create rooms"
+        locations: "Locations"
+        list_location: "List locations"
+        create_location: "Create locations"
 
   admin:
     users:
@@ -104,7 +107,7 @@ en:
         number_of_bed: "Number of bed"
         quantity: "Quantity"
         price: "Price"
-        location: "Location ID"
+        location_id: "Location ID"
         created_at: "Create at"
         update_at: "Update at"
         image: "Image"
@@ -162,3 +165,68 @@ en:
         enter_number_of_bed: "Enter number of bed"
         enter_quantity: "Enter quantity"
         enter_price: "Enter price"
+
+    locations:
+      index:
+        locations: "Locations"
+        list_room: "Room list"
+        location_name: "Location name"
+        location: "Location"
+        national: "National"
+        zip_code: "Zip Code"
+        description: "Description"
+        status: "Status"
+        location_type_id: "Location type ID"
+        created_at: "Create at"
+        update_at: "Update at"
+        action: "Action"
+        edit: "Edit"
+        delete: "Delete"
+        create: "Create"
+        confirm: "Confirm"
+      new:
+        submit: "Create"
+        add_new_location: "Add new location"
+        create_room: "Create room"
+        location_id: "Location ID"
+        bed_detail_id: "Bed Detail ID"
+      create:
+        create_unsuccess: "Create unsuccessful!"
+        created: "Room created!"
+      update:
+        room_updated: "Room updated"
+      destroy:
+        room_deleted: "Room deleted"
+        room_failed: "Room delete failed"
+      edit:
+        create_location: "Create location"
+        edit_location: "Edit location"
+        submit: "Save"
+      show:
+        create_at: "Create at"
+        update_at: "Update at"
+        del_but: "Delete"
+        edit_but: "Edit"
+      modal:
+        confirm: "Are you sure?"
+        del: "Delete"
+        cancel: "Cancel"
+      form:
+        form_name: "Name"
+        form_location_type_id: "Location type ID"
+        form_user_id: "User ID"
+        form_location: "Location"
+        form_national: "National"
+        form_zip_code: "Zip Code"
+        form_description: "Description"
+        form_status: "Status"
+        form_cancel: "Cancel"
+        enter_name: "Enter name"
+        enter_location_type_id: "Enter location type id"
+        enter_user_id: "Enter user id"
+        enter_location: "Enter location"
+        enter_national: "Enter national"
+        enter_zip_code: "Enter Zip Code"
+        enter_description: "Enter description"
+        enter_status: "Enter status"
+
