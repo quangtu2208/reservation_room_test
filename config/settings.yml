@@ -7,6 +7,8 @@ validates:
 search_fields:
   user: ["name", "email", "created_at", "updated_at"]
   location_type: ["name", "created_at", "updated_at"]
+  room: ["name", "occupancy_limit", "living_room", "bed_room", "bath_room",
+    "number_of_bed", "quantity", "price", "created_at", "updated_at"]
 
 controllers:
   admin:
@@ -14,3 +16,12 @@ controllers:
       pag: 10
     location_types:
       pag: 10
+
+  manager:
+    rooms:
+      page: 5
+
+manager:
+  rooms:
+    index:
+      page: 5
