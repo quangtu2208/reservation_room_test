@@ -8,7 +8,9 @@ module Admin
     end
 
     def search
-      @users = SearchQuery.new(User,search_params,Settings.search_fields.user).all.page(params[:page]).per Settings.controllers.admin.users.pag
+      @users = SearchService.new(User, search_params, Settings.search_fields.user)
+        .all_records
+        .page(params[:page]).per Settings.controllers.admin.users.pag
       render :index
     end
 

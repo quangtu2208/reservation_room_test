@@ -20,6 +20,10 @@ Rails.application.routes.draw do
     resources :users do
       get "search", on: :collection
     end
+
+    resources :location_types do
+      get "search", on: :collection
+    end
     root "static_pages#home"
   end
 

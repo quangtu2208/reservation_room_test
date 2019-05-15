@@ -1,0 +1,11 @@
+<%= form_for [:admin, @location_type] do |f| %>
+  <%= render "shared/error_messages", object: f.object %>
+
+  <div class="form-group">
+    <%= f.label :name, t(".form_name") %>
+    <%= f.text_field :name, class: "form-control", placeholder: t(".form_name") %>
+  </div>
+
+  <%= f.button yield(:button_text), class: "btn btn-success mr-2" %>
+  <%= link_to t(".form_cancel"), admin_location_types_path, class: "btn btn-light" %>
+<% end %>
