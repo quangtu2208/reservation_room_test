@@ -3,6 +3,10 @@ validates:
     maximum_name: 50
     maximum_email: 255
     minimum_pass: 6
+  location_type:
+    maximum_name: 50
+  service:
+    maximum_name: 50
 
 search_fields:
   user: ["name", "email", "created_at", "updated_at"]
@@ -11,6 +15,7 @@ search_fields:
     "number_of_bed", "quantity", "price", "created_at", "updated_at"]
   location: ["name", "national", "zip_code", "description", "status",
     "location_type_id", "user_id", "created_at", "updated_at"]
+  service: ["name", "created_at", "updated_at"]
 
 controllers:
   admin:
@@ -18,7 +23,8 @@ controllers:
       pag: 10
     location_types:
       pag: 10
-
+    services:
+      pag: 10
 
   manager:
     rooms:
@@ -26,7 +32,3 @@ controllers:
     locations:
       page: 5
 
-manager:
-  rooms:
-    index:
-      page: 5

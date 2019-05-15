@@ -49,6 +49,23 @@
       </div>
     </li>
     <li class="nav-item">
+      <a class="nav-link" data-toggle="collapse" href="#services" aria-expanded="false" aria-controls="services">
+        <i class="menu-icon mdi mdi-account-multiple"></i>
+        <span class="menu-title"><%= t ".services" %></span>
+        <i class="menu-arrow"></i>
+      </a>
+      <div class="collapse" id="services">
+        <ul class="nav flex-column sub-menu">
+          <li class="nav-item">
+            <%= link_to t(".list_services"), admin_services_path, class: "nav-link" %>
+          </li>
+          <li class="nav-item">
+            <%= link_to t(".new_service"), new_admin_service_path, class: "nav-link" %>
+          </li>
+        </ul>
+      </div>
+    </li>
+    <li class="nav-item">
       <a class="nav-link" data-toggle="collapse" href="#page-layouts" aria-expanded="false" aria-controls="page-layouts">
         <i class="menu-icon mdi mdi-account-multiple"></i>
         <span class="menu-title"><%= t ".accounts" %></span>

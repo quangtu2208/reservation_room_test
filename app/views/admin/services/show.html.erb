@@ -1,0 +1,14 @@
+<%= provide :title, @service.name %>
+
+<div class="row">
+  <div class="col-12 card">
+    <div class="card-body">
+      <address>
+        <p class="font-weight-bold"><%= @service.name %>
+        <p><%= t ".created_at" %>: <%= l @service.created_at, format: :full %></p>
+        <p><%= t ".updated_at" %>: <%= l @service.updated_at, format: :full %></p>
+      </address>
+      <%= link_to t(".edit_but"), edit_admin_service_path(@service), class: "btn btn-primary btn-sm float-right" %>
+    </div>
+  </div>
+</div>

@@ -1,6 +1,7 @@
 class User < ApplicationRecord
   include UserDecorator
 
+  USER_PARAMS = %i(name email password password_confirmation).freeze
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
 
   attr_accessor :remember_token, :activation_token, :reset_token
