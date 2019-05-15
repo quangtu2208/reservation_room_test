@@ -1,0 +1,20 @@
+<h4>Reviews</h4><br>
+
+    <% @locations.each do |location| %>
+      <% if !location.reviews.blank? %>
+
+        <% location.reviews.each do |review| %>
+          <div class="row">
+            <div class="col-md-2 text-center">
+              <%= review.user.name %>
+            </div>
+            <div class="col-md-10">
+              <%= link_to location.listing_name, location %><br>
+              <%= review.comment %><br>
+              <%= review.created_at.strftime("%v") %>
+            </div>
+          </div>
+        <% end %>
+
+      <% end %>
+    <% end %>

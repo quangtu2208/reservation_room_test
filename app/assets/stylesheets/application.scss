@@ -19,5 +19,21 @@
  *= require animate.min
  *= require owl.carousel
  *= require main
+ *= require_tree .
  *= require_self
  */
+
+body {
+  background: white;
+}
+
+.review_title {
+  margin: 0 0 20px 0;
+}
+.reviews {
+  padding: 15px 0;
+  border-bottom: 1px solid #EAEAEA;
+  .star-rating {
+    padding-bottom: 8px;
+  }
+}

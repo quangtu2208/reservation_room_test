@@ -1,0 +1,13 @@
+<div class="row">
+      <div class="col-md-12">
+        <h3>Reviews <span><%= @location.total_rate%></span> (<%= @reviews.count %>)</h3>
+        <div class="container">
+          <div>
+            <%= render 'reviews/form' if !@hasReview  %>
+          </div>
+          <div>
+            <%= render 'reviews/list' %>
+          </div>
+        </div>
+      </div>
+    </div>

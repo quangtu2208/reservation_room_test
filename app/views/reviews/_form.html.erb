@@ -1,0 +1,24 @@
+<%= form_for([@location, @location.reviews.new]) do |f| %>
+
+  <div class="field">
+    <div id="star-rating"></div>
+  </div>
+
+  <div class="form-group">
+    <%= f.text_area :comment, rows: 3, class: "form-control" %>
+  </div>
+
+  <%= f.hidden_field :location_id, value: @location.id %>
+
+  <div class="actions">
+    <%= f.submit "Create", class: "btn btn-primary" %>
+  </div>
+
+<% end %>
+
+<script>
+  $('#star-rating').raty({
+    path: '/assets/',
+    scoreName: 'review[rate]',
+  });
+</script>

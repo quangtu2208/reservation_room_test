@@ -16,6 +16,10 @@ Rails.application.routes.draw do
   resources :account_activations, only: %i(edit)
   resources :password_resets, except: %i(show index destroy)
 
+  resources :locations do
+    resources :reviews, only: [ :create, :destroy]
+  end
+
   namespace :admin do
     resources :users do
       get "search", on: :collection
@@ -30,6 +34,7 @@ Rails.application.routes.draw do
     end
     resources :locations do
       get "search", on: :collection
+      resources :reviews, only: [:show]
     end
   end
 end

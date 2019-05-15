@@ -12,4 +12,8 @@ class Location < ApplicationRecord
   validates_presence_of :name, :national, :zip_code, :description, :status
 
   LOCATION_PARAMS = [:name, :national, :zip_code, :description, :status, :location_type_id, :user_id, :created_at, :updated_at, pictures: []].freeze
+
+  def average_rating
+    reviews.count == 0 ? 0 : reviews.average(:rate).round(2)
+  end
 end
