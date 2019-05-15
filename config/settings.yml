@@ -7,6 +7,8 @@ validates:
     maximum_name: 50
   service:
     maximum_name: 50
+  bed_detail:
+    maximum_name: 50
 
 search_fields:
   user: ["name", "email", "created_at", "updated_at"]
@@ -16,6 +18,7 @@ search_fields:
   location: ["name", "national", "zip_code", "description", "status",
     "location_type_id", "user_id", "created_at", "updated_at"]
   service: ["name", "created_at", "updated_at"]
+  bed_detail: ["name", "created_at", "updated_at"]
 
 controllers:
   admin:
@@ -25,10 +28,11 @@ controllers:
       pag: 10
     services:
       pag: 10
+    bed_details:
+      pag: 10
 
   manager:
     rooms:
       page: 5
     locations:
       page: 5
-
