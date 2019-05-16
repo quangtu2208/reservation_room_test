@@ -1,6 +1,5 @@
 class LocationsController < ApplicationController
   before_action :set_location, only: [:show, :edit, :update]
-  before_action :authenticate_user!, except: [:show]
 
   def index
     @locations = current_user.locations
