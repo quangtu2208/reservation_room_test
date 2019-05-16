@@ -26,6 +26,9 @@ en:
         services: "Services"
         list_services: "List Services"
         new_service: "New Service"
+        bed_details: "Bed Details"
+        list_bed_details: "List Bed Details"
+        new_bed_detail: "New Bed Detail"
     application:
       base_title: "Room booking"
     header:
@@ -142,6 +145,29 @@ en:
       destroy:
         destroy_success: "Service deleted"
         destroy_fail: "Can't delete"
+    bed_details:
+      new:
+        page_title: "Create bed detail"
+        form_submit: "Create"
+      form:
+        form_name: "Name"
+        form_cancel: "Cancel"
+      edit:
+        page_title: "Update bed detail"
+        form_submit: "Save"
+      show:
+        create_at: "Create at"
+        update_at: "Update at"
+        edit_but: "Edit"
+      index:
+        page_title: "List bed details"
+        name: "Name"
+        create_at: "Created at"
+        update_at: "Updated at"
+      create:
+        create_success: "Create bed detail success"
+      update:
+        update_success: "Service updated"
 
   shared:
     error_messages:

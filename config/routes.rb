@@ -17,17 +17,10 @@ Rails.application.routes.draw do
   resources :password_resets, except: %i(show index destroy)
 
   namespace :admin do
-    resources :users do
-      get "search", on: :collection
-    end
-
-    resources :location_types do
-      get "search", on: :collection
-    end
-
-    resources :services, except: :destroy do
-      get "search", on: :collection
-    end
+    resources(:users){get "search", on: :collection}
+    resources(:location_types){get "search", on: :collection}
+    resources(:services, except: :destroy){get "search", on: :collection}
+    resources(:bed_details, except: :destroy){get "search", on: :collection}
 
     root "static_pages#home"
   end

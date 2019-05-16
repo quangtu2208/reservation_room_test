@@ -1,0 +1,14 @@
+<%= provide :title, @bed_detail.name %>
+
+<div class="row">
+  <div class="col-12 card">
+    <div class="card-body">
+      <address>
+        <p class="font-weight-bold"><%= @bed_detail.name %>
+        <p><%= t ".created_at" %>: <%= l @bed_detail.created_at, format: :full %></p>
+        <p><%= t ".updated_at" %>: <%= l @bed_detail.updated_at, format: :full %></p>
+      </address>
+      <%= link_to t(".edit_but"), edit_admin_bed_detail_path(@bed_detail), class: "btn btn-primary btn-sm float-right" %>
+    </div>
+  </div>
+</div>
