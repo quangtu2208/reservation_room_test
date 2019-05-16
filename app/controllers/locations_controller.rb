@@ -8,6 +8,7 @@ class LocationsController < ApplicationController
   def show
     @pictures = @location.pictures
     @reviews = @location.reviews
+    @rooms = @location.rooms
     @hasReview = @reviews.find_by(user_id: current_user.id) if current_user
   end
 

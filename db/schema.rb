@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_05_16_011910) do
+ActiveRecord::Schema.define(version: 2019_05_17_030417) do
 
   create_table "bed_details", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "name"
@@ -40,7 +40,7 @@ ActiveRecord::Schema.define(version: 2019_05_16_011910) do
     t.string "location"
     t.string "national"
     t.string "zip_code"
-    t.string "description"
+    t.text "description"
     t.boolean "status", default: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

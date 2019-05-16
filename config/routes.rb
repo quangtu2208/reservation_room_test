@@ -18,7 +18,10 @@ Rails.application.routes.draw do
 
   resources :locations do
     resources :reviews, only: [ :create, :destroy]
+    resources :rooms, only: %i(show)
   end
+
+  resources :rooms
 
   namespace :admin do
     resources :users do

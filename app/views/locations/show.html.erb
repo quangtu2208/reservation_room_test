@@ -1,13 +1,115 @@
+<div class="row d-flex justify-content-center">
+  <div class="col-7">
+  <h3><strong><%= @location.name%></strong></h3>
+  <span id="average_rating_<%= @location.id %>"></span><br>
+  <i class="fa fa-map-marker" aria-hidden="true"><span><%= @location.location%></span></i>
+  </div>
+</div>
+<div class="row d-flex justify-content-center">
+  <div class="col-7">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+
+          <div class="carousel-item active">
+            <%= image_tag @location.pictures[0].url,class: "d-block w-100"  if @location.pictures.length > 0  %>
+          </div>
+
+          <div class="carousel-item">
+            <%= image_tag @location.pictures[1].url,class: "d-block w-100"  if @location.pictures.length > 0  %>
+          </div>
+          <div class="carousel-item">
+            <%= image_tag @location.pictures[2].url,class: "d-block w-100"  if @location.pictures.length > 0  %>
+          </div>
+
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<div class="row d-flex justify-content-center">
+  <div class="col-md-7">
+        <h4><strong>National :</strong><%= @location.national %></h4>
+        <strong>Description to <%= @location.name %> .</strong><br>
+        <%= @location.description %>
+  </div>
+</div>
+
+<br>
+
+<div class="row d-flex justify-content-center">
+  <div class="col-md-7">
+        <h4><strong>Most Popular Facilities</strong></h4>
+        <i class="fa fa-rss-square" aria-hidden="true"> Free WiFi</i>
+        <i class="fa fa-car" aria-hidden="true"> Free Parking</i>
+        <i class="fa fa-users" aria-hidden="true"> Family rooms</i>
+        <i class="fa fa-space-shuttle" aria-hidden="true" > Airport shuttle (free)</i>
+        <i class="fa fa-glass" aria-hidden="true"> Bar</i>
+  </div>
+</div>
+
+<br>
+
+<div class="row d-flex justify-content-center">
+  <div class="col-md-7 card">
+      <table class="table">
+        <thead>
+          <tr>
+            <th><%= t ".sleeps" %></th>
+            <th><%= t ".room_type" %></th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% @location.rooms.each do |l| %>
+            <tr>
+              <td><i class="fa fa-user-o" aria-hidden="true"> x <%= l.occupancy_limit %>
+                </i></td>
+              <td><%= l.name %></td>
+              <td>
+              <%= link_to t(".show_prices"), rooms_path , class: "add btn btn-primary font-weight-medium todo-list-add-btn" %>
+              </td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+    </div>
+</div>
+
+<br>
+
 <div class="row">
-      <div class="col-md-12">
-        <h3>Reviews <span><%= @location.total_rate%></span> (<%= @reviews.count %>)</h3>
-        <div class="container">
-          <div>
-            <%= render 'reviews/form' if !@hasReview  %>
-          </div>
-          <div>
-            <%= render 'reviews/list' %>
-          </div>
-        </div>
+  <div class="col-md-12">
+    <div class="container">
+      <h3>Reviews <span><%= @location.total_rate%></span> (<%= @reviews.count %>)</h3>
+      <div>
+        <%= render 'reviews/form' if !@hasReview  %>
+      </div>
+      <div>
+        <%= render 'reviews/list' %>
       </div>
     </div>
+  </div>
+</div>
+
+<script>
+  $('#average_rating_<%= @location.id %>').raty({
+    path: '/assets/',
+    readOnly: true,
+    score: <%= @location.total_rate %>
+  });
+</script>
