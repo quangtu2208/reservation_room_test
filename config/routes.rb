@@ -24,6 +24,11 @@ Rails.application.routes.draw do
     resources :location_types do
       get "search", on: :collection
     end
+
+    resources :services, except: :destroy do
+      get "search", on: :collection
+    end
+
     root "static_pages#home"
   end
 

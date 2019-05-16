@@ -23,6 +23,9 @@ en:
         location_types: "Location Types"
         list_location_types: "List Location Types"
         new_location_type: "New Location Type"
+        services: "Services"
+        list_services: "List Services"
+        new_service: "New Service"
     application:
       base_title: "Room booking"
     header:
@@ -107,6 +110,37 @@ en:
         update_success: "Location type updated"
       destroy:
         destroy_success: "Location type deleted"
+        destroy_fail: "Can't delete"
+    services:
+      new:
+        page_title: "Create service"
+        form_submit: "Create"
+      form:
+        form_name: "Name"
+        form_cancel: "Cancel"
+      modal:
+        confirm: "Are you sure?"
+        del: "Delete"
+        cancel: "Cancel"
+      edit:
+        page_title: "Update service"
+        form_submit: "Save"
+      show:
+        create_at: "Create at"
+        update_at: "Update at"
+        del_but: "Delete"
+        edit_but: "Edit"
+      index:
+        page_title: "List services"
+        name: "Name"
+        create_at: "Created at"
+        update_at: "Updated at"
+      create:
+        create_success: "Create service success"
+      update:
+        update_success: "Service updated"
+      destroy:
+        destroy_success: "Service deleted"
         destroy_fail: "Can't delete"
 
   shared:

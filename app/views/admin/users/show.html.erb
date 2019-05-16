@@ -7,8 +7,8 @@
       <address>
         <p class="font-weight-bold"><%= @user.name %>
           <%= @user.role_badge %> <%= @user.status_badge %></p>
-        <p><%= t ".created_at" %>: <%= @user.created_at.strftime(Settings.datetime_format) %></p>
-        <p><%= t ".updated_at" %>: <%= @user.updated_at.strftime(Settings.datetime_format) %></p>
+        <p><%= t ".created_at" %>: <%= l @user.created_at, format: :full %></p>
+        <p><%= t ".updated_at" %>: <%= l @user.updated_at, format: :full %></p>
       </address>
       <address class="text-primary">
         <p class="font-wei<%= @user.name %>ght-bold"> <%= t ".email" %> </p>

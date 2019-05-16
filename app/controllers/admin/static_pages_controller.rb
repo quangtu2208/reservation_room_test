@@ -1,5 +1,3 @@
-module Admin
-  class StaticPagesController < Admin::ApplicationController
-    def home; end
-  end
+class Admin::StaticPagesController < Admin::ApplicationController
+  def home; end
 end

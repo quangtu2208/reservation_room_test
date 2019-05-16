@@ -1,0 +1,13 @@
+<%= provide :title, t(".page_title") %>
+<%= provide :button_text, t(".form_submit") %>
+
+<div class="row flex-grow">
+  <div class="col-12">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title"><%= t ".page_title" %></h4>
+        <%= render "form" %>
+      </div>
+    </div>
+  </div>
+</div>
