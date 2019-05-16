@@ -9,6 +9,8 @@ search_fields:
   location_type: ["name", "created_at", "updated_at"]
   room: ["name", "occupancy_limit", "living_room", "bed_room", "bath_room",
     "number_of_bed", "quantity", "price", "created_at", "updated_at"]
+  location: ["name", "national", "zip_code", "description", "status",
+    "location_type_id", "user_id", "created_at", "updated_at"]
 
 controllers:
   admin:
@@ -17,8 +19,11 @@ controllers:
     location_types:
       pag: 10
 
+
   manager:
     rooms:
+      page: 5
+    locations:
       page: 5
 
 manager:

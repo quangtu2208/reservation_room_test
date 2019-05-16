@@ -10,6 +10,7 @@ class Manager::RoomsController < Manager::ApplicationController
   def search
     @rooms = SearchService.new(Room,search_params,Settings.search_fields.room).all_records
       .page(params[:page]).per Settings.page
+    render :index
   end
 
   def new

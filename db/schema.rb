@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_05_14_010130) do
+ActiveRecord::Schema.define(version: 2019_05_14_064757) do
 
   create_table "bed_details", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "name"
@@ -44,6 +44,7 @@ ActiveRecord::Schema.define(version: 2019_05_14_010130) do
     t.boolean "status", default: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.json "pictures"
     t.index ["location_type_id"], name: "index_locations_on_location_type_id"
     t.index ["name"], name: "index_locations_on_name", unique: true
     t.index ["national"], name: "index_locations_on_national"
@@ -98,6 +99,7 @@ ActiveRecord::Schema.define(version: 2019_05_14_010130) do
     t.bigint "location_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.json "pictures"
     t.index ["bed_detail_id"], name: "index_rooms_on_bed_detail_id"
     t.index ["location_id"], name: "index_rooms_on_location_id"
   end
