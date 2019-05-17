@@ -31,8 +31,18 @@ controllers:
     bed_details:
       pag: 10
 
+
   manager:
     rooms:
       page: 5
     locations:
       page: 5
+
+manager:
+  rooms:
+    index:
+      page: 5
+
+reviews:
+  form:
+    row_numbers: 3
