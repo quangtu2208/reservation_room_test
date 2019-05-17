@@ -106,17 +106,9 @@
           <div id="flight" role="tabpanel" aria-labelledby="flight-tab">
 
           <form class="form-wrap">
-            <div class="col-sm-6">
-              <span><h5>$ <%= @room.price %> per night </h5></span>
-            </div>
 
-            <input type="text" class="form-control date-picker" name="start" placeholder="Start " onfocus="this.placeholder = ''" onblur="this.placeholder = 'Check In'">
+            <%= render 'reservation_details/form' %>
 
-            <input type="text" class="form-control date-picker" name="return" placeholder="Return " onfocus="this.placeholder = ''" onblur="this.placeholder = 'Check out '">
-
-            <input type="number" min="1" max="20" class="form-control" name="adults" placeholder="Adults " onfocus="this.placeholder = ''" onblur="this.placeholder = 'Guests '">
-
-            <a href="#" class="primary-btn text-uppercase">Book</a>
           </form>
           </div>
         </div>
@@ -125,3 +117,4 @@
 
   </div>
 </div>
+

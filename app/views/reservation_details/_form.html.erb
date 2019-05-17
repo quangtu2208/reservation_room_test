@@ -1,0 +1,78 @@
+<%= form_for([@room, @room.reservation_details.new]) do |f| %>
+
+  <div class="row">
+    <div class="col-md-12 price_tag">
+      <h4><span class="pull-left">$<%= @room.price %></span></h4>
+      <h4><span class="pull-right">Per Night</span></h4>
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <%= f.text_field :start_date, readonly: 'true', placeholder: 'Check In', class: 'form-control date-picker' %>
+    <%= f.text_field :end_date, readonly: 'true', placeholder: 'Check Out', class: 'form-control date-picker' %>
+
+    <%= f.hidden_field :room_id, value: @room.id %>
+    <%= f.hidden_field :price, value: @room.price %>
+  </div>
+
+  <%= f.submit "Book Now", class: "btn btn-primary " %>
+
+<% end %>
+
+<script>
+
+  function unavailable(date) {
+    dmy = date.getDate() + "-" + (date.getMonth()+1) + "-" + date.getFullYear();
+    return [$.inArray(dmy, unavailableDates) == -1];
+  }
+
+        $('#reservation_detail_start_date').datepicker({
+          dateFormat: 'dd-mm-yy',
+          minDate: 0,
+          maxDate: '3m',
+          beforeShowDay: unavailable,
+          onSelect: function(selected) {
+            $('#reservation_detail_end_date').datepicker("option", "minDate", selected);
+            $('#reservation_detail_end_date').attr('disabled', false);
+
+            var start_date = $(this).datepicker('getDate');
+            var end_date = $('#reservation_detail_end_date').datepicker('getDate');
+            var days = (end_date - start_date)/1000/60/60/24 + 1
+
+            var input = {
+              'start_date': start_date,
+              'end_date': end_date,
+              'room_id': <%= @room.id %>
+            }
+
+          }
+        });
+
+        $('#reservation_detail_end_date').datepicker({
+          dateFormat: 'dd-mm-yy',
+          minDate: 0,
+          maxDate: '3m',
+          beforeShowDay: unavailable,
+          onSelect: function(selected) {
+            $('#reservation_detail_start_date').datepicker("option", "maxDate", selected);
+
+            var start_date = $('#reservation_detail_start_date').datepicker('getDate');
+            var end_date = $(this).datepicker('getDate');
+            var days = (end_date - start_date)/1000/60/60/24 + 1
+
+            var input = {
+              'start_date': start_date,
+              'end_date': end_date,
+              'room_id': <%= @room.id %>
+            }
+
+
+          }
+        });
+      }
+    });
+
+
+
+  });
+</script>

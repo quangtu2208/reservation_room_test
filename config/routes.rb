@@ -21,6 +21,10 @@ Rails.application.routes.draw do
     resources :rooms, only: %i(show)
   end
 
+  resources :rooms do
+    resources :reservation_details, only: [ :create ]
+  end
+
   namespace :admin do
     resources :users do
       get "search", on: :collection
