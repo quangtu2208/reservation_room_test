@@ -81,7 +81,7 @@
                 </i></td>
               <td><%= l.name %></td>
               <td>
-              <%= link_to t(".show_prices"), rooms_path , class: "add btn btn-primary font-weight-medium todo-list-add-btn" %>
+              <%= link_to t(".show_prices"), [@location,l], class: "btn btn-primary font-weight-medium" %>
               </td>
             </tr>
           <% end %>

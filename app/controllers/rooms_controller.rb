@@ -13,6 +13,10 @@ class RoomsController < ApplicationController
     params.require(:room).permit(:name, :occupancy_limit)
   end
 
+  def load_location
+    @location =Location.find_by id: params[:location_id]
+  end
+
   def load_room
     @room = Room.find_by id: params[:id]
     return if @room

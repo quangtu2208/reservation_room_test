@@ -21,8 +21,6 @@ Rails.application.routes.draw do
     resources :rooms, only: %i(show)
   end
 
-  resources :rooms
-
   namespace :admin do
     resources :users do
       get "search", on: :collection
